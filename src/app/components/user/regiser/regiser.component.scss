@@ -1,0 +1,96 @@
+.row{
+    margin: 50px;
+    padding:0 ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card-auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(224, 214, 214);
+    width: 400px;
+    height: 400px;
+    
+    
+}
+
+#fullname{
+    font-weight: bold;
+    font-size: large;
+    margin: 5px;
+}
+
+#fullnameInput{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    border-color: white;
+    width: 170px;
+    height: 20px;
+}
+
+#email{
+    font-weight: bold;
+    font-size: large;
+    margin: 5px;
+}
+
+#emailInput{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    border-color: white;
+    width: 170px;
+    height: 20px;
+}
+
+#password{
+    font-weight: bold;
+    font-size: large;
+    margin: 5px; 
+}
+
+#passwordInput{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    border-color: white;
+    width: 170px;
+    height: 20px;
+}
+
+#c_password{
+    font-weight: bold;
+    font-size: large;
+    margin: 5px; 
+}
+
+#c_passwordInput{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    border-color: white;
+    width: 170px;
+    height: 20px;
+}
+
+#registerButton{
+    background-color: purple;
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+      
+}
+
+#existingAccount{
+    font-weight: bold;
+    font-style: italic;
+    
+}

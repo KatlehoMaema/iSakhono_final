@@ -1,1 +1,32 @@
-<p>login works!</p>
+<div class="row">
+    <div class="col offset-col-offset">
+      <div class="card-auth">
+        <div class="card-body auth-card">
+          <div class="auth-avatar">
+            <img src="" alt="logo" class="logo">
+          </div>
+          <form (submit)="login(userData)">
+            <div class="form-group" id="email">
+              <label for="email">Email : </label>
+              <input type="text" name="email" class="form-control" placeholder="Email" [(ngModel)]="userData.email" id="emailInput">
+            </div>
+            <div class="form-group" id="password">
+              <label for="password">Password : </label>
+              <input type="password" name="password" class="form-control" placeholder="********" [(ngModel)]="userData.password" id="passwordInput">
+              <div class="text-right forget-pass">
+                <a routerLink="/forget-password" id="forgotPassword">Forget Password ?</a>
+              </div>
+            </div>
+            <div class="text-center">
+              <input type="submit" class="btn btn-my" value="Sign-in" id="signinButton">
+            </div>
+          </form>
+          <div class="text-center register" id="noAccount">
+            Don`t have an account ? <a routerLink="/sign-up">Register</a> here.
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
