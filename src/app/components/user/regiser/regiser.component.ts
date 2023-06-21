@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from "../../../service/user.service";
 
 @Component({
   selector: 'app-regiser',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class RegiserComponent {
 
+   
+  userData: any;
+  keyboard: any;
+  value = "";
+  constructor(private user: UserService) { }
+
+  ngOnInit() {
+    this.user.currentUserData.subscribe((userData: any) => this.userData = userData)
+  }
+  register(data: any){
+    
+    this.user.changeData(data);
+  }
+  
 }

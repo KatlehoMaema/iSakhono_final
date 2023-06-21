@@ -1,0 +1,108 @@
+.row{
+    margin: 50px;
+    padding:0 ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.sakhono-logo{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.card-auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(224, 214, 214);
+    width: 400px;
+    height: 400px;
+    
+    
+}
+
+h3{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.navReg{
+    font-weight: bold;
+    font-size: xx-large;
+    
+
+}
+
+.navLog{
+    font-weight: bold;
+    font-size: xx-large;
+
+}
+
+#email{
+    font-weight: bold;
+    font-size: large;
+    margin: 5px;
+}
+
+#emailInput{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    border-color: white;
+    width: 170px;
+    height: 20px;
+}
+
+#password{
+    font-weight: bold;
+    font-size: large;
+    margin: 5px;
+}
+
+#passwordInput{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    border-color: white;
+    width: 170px;
+    height: 20px;
+    
+
+}
+
+#forgotPassword{
+    color: navy;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+    
+}
+
+#signinButton{
+    background-color: purple;
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+    
+}
+
+#noAccount{
+    font-weight: bold;
+    font-style: italic;
+}
+
+#registerName{
+    color: purple;
+}
+
+#buttonForsignin{
+    text-align: center;
+    padding-right: 35px;
+}
