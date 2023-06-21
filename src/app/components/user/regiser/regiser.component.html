@@ -1,38 +1,47 @@
+<div class="auth-avatar">
+  <img src="../assets/sakhono.png" height="100px" alt="sakhono-logo" class="sakhono-logo">
+</div>
+<div class="card-body auth-card">
+              
+  <span style="margin-right: 30px;" class="navReg">  Register</span>
+  <span class="navLog">Login</span>
+</div>
+  <form (submit)="register(userData)">
+    <div class="text-center login" id="existingAccount">
+      Already have an account? <a routerLink="/login"> Login </a> here.
+    </div>
+</form>
 <div class="row">
     <div class="row">
+      
         <div class="col offsetcol offset">
           <div class="card-auth">
-            <div class="card-body auth-card">
-              <div class="auth-avatar">
-                <img src="sakhono.png" alt="logo" class="sakhono-logo">
-              </div>
-              <form (submit)="register(userData)">
+            
+              <form>
                 <div class="form-group" id="fullname">
-                    <label for="name">Full Name :</label>
-                    <input type="text" name="Full name" class="form-control" placeholder="e.g John Doe" [(ngModel)]
+                    <!-- <label for="name">Full Name :</label> -->
+                    <input type="text" name="Full name" class="form-control" placeholder=" Full Name" [(ngModel)]
                     ="userData.name" id="fullnameInput">
                 </div>
                 <div class="form-group" id="email">
-                    <label for="email">Email :</label>
-                    <input type="text" name="email" class="form-control" placeholder="johndoe@gmail.com" [(ngModel)]
+                    <!-- <label for="email">Email :</label> -->
+                    <input type="text" name="email" class="form-control" placeholder=" Email" [(ngModel)]
                     ="userData.email" id="emailInput">
                 </div>
                 <div class="form-group" id="password">
-                    <label for="password">Password :</label>
-                    <input type="password" name="password" class="form-control" placeholder="*******" [(ngModel)]
+                    <!-- <label for="password">Password :</label> -->
+                    <input type="password" name="password" class="form-control" placeholder=" Password" [(ngModel)]
                     ="userData.password" id="passwordInput">
                 </div>
                 <div class="form-group" id="c_password">
-                    <label for="c_password">Confirm Password :</label>
-                    <input type="password" name="c_password" class="form-control" placeholder="*******" [(ngModel)]
+                    <!-- <label for="c_password">Confirm Password :</label> -->
+                    <input type="password" name="c_password" class="form-control" placeholder=" Confirm Password" [(ngModel)]
                     ="userData.c_password" id="c_passwordInput">
                 </div>
-                <div class="text-center">
+                <div class="text-center" id="buttonFor-register">
                     <input type="submit" class="btn btn-my" value="Register" id="registerButton">
                 </div>
-                <div class="text-center login" id="existingAccount">
-                    Already have an account? <a routerLink="/login">Login</a> here.
-                </div>
+                
                 
               </form>
 
