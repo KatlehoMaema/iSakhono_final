@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./job-search.component.scss']
 })
 export class JobSearchComponent {
+  
 
 }
+
