@@ -5,6 +5,8 @@ import { SignupComponent } from './components/user/signup/signup.component';
 import { ProfileComponent } from './components/user/profile/profile.component';
 import { JobSearchComponent } from './components/user/job-search/job-search.component';
 import { ProfileEditComponent } from './components/user/profile-edit/profile-edit.component';
+import { LoginComponent } from './components/user/login/login.component';
+
 
 
 const routes: Routes = [
@@ -14,6 +16,9 @@ const routes: Routes = [
   },
   {
     path: "register-user", component: SignupComponent
+  },
+  {
+    path: "sign-in", component: LoginComponent
   },
   {
     path: "user-profile", component: ProfileComponent
