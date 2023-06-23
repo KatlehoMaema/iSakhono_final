@@ -11,6 +11,8 @@ import { JobSearchComponent } from './components/user/job-search/job-search.comp
 import { CompanyProfileComponent } from './components/company/company-profile/company-profile.component';
 import { CandidateSearchComponent } from './components/company/candidate-search/candidate-search.component';
 import { SignupComponent } from './components/user/signup/signup.component';
+import { CompanyRegisterComponent } from './components/company/company-register/company-register.component';
+import { CompanyLoginComponent } from './components/company/company-login/company-login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { SignupComponent } from './components/user/signup/signup.component';
     JobSearchComponent,
     CompanyProfileComponent,
     CandidateSearchComponent,
-    SignupComponent
+    SignupComponent,
+    CompanyRegisterComponent,
+    CompanyLoginComponent
   ],
   imports: [
     BrowserModule,

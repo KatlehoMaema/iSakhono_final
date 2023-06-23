@@ -6,6 +6,8 @@ import { ProfileComponent } from './components/user/profile/profile.component';
 import { JobSearchComponent } from './components/user/job-search/job-search.component';
 import { ProfileEditComponent } from './components/user/profile-edit/profile-edit.component';
 import { LoginComponent } from './components/user/login/login.component';
+import { CompanyRegisterComponent } from './components/company/company-register/company-register.component';
+import { CompanyLoginComponent } from './components/company/company-login/company-login.component';
 
 
 
@@ -28,7 +30,14 @@ const routes: Routes = [
   },
   {
     path: "profile-edit", component: ProfileEditComponent
+  },
+  {
+    path: "company-register", component: CompanyRegisterComponent
+  },
+  {
+    path: "company-login", component: CompanyLoginComponent
   }
+
 ];
 
 @NgModule({
