@@ -21,6 +21,7 @@ h2 {
 .title {
     background-color: #040461;
     
+    
 }
 
 Input {
@@ -52,7 +53,7 @@ button {
 
  h5 {
     background-color: lightgrey;
-    height: 25px;
+    // height: 150px;
 
 
  }
@@ -61,7 +62,7 @@ button {
 }
  .card{
     width: 190px;
-    height: 204px;
+    height: 225px;
     background-color: lightgray;
     margin-top: 20px;
     // padding: 15px;
@@ -72,10 +73,11 @@ button {
     // text-decoration: #01010f;
     // align-items: center;
  }
- img.card-img-midle{
-    width: 150px;
-    height: 100px;
-    border-radius: 15px;
+ img.card-img-top{
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    margin-left: 40px;
  }
 
  .btn {
@@ -84,7 +86,7 @@ button {
     font-size: small;
     width: 108px;
     margin-left: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 200px;
     
  }
  
