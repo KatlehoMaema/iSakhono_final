@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UserService } from "../../../service/user.service";
+// import { UserService } from "../../../service/user.service";
 
 @Component({
   selector: 'app-login',
@@ -9,18 +9,20 @@ import { UserService } from "../../../service/user.service";
 export class LoginComponent  {
 
   userData: any;
-  constructor(private user: UserService) {}
+  constructor(
+    // private user: UserService
+    ) {}
 
   ngOnInit() {
-    this.user.currentUserData.subscribe(userData => (this.userData = userData));
+    // this.user.currentUserData.subscribe(userData => (this.userData = userData));
   }
 
   changeData(event:any) {
     var msg = event.target.value;
-    this.user.changeData(msg);
+    // this.user.changeData(msg);
   }
   login(data:any) {
-    this.user.changeData(data);
+    // this.user.changeData(data);
   }
 
 }

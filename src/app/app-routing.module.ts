@@ -5,6 +5,9 @@ import { SignupComponent } from './components/user/signup/signup.component';
 import { ProfileComponent } from './components/user/profile/profile.component';
 import { JobSearchComponent } from './components/user/job-search/job-search.component';
 import { ProfileEditComponent } from './components/user/profile-edit/profile-edit.component';
+import { LoginComponent } from './components/user/login/login.component';
+import { CandidateSearchComponent } from './components/company/candidate-search/candidate-search.component';
+
 
 
 const routes: Routes = [
@@ -16,6 +19,9 @@ const routes: Routes = [
     path: "register-user", component: SignupComponent
   },
   {
+    path: "sign-in", component: LoginComponent
+  },
+  {
     path: "user-profile", component: ProfileComponent
   },
   {
@@ -23,8 +29,14 @@ const routes: Routes = [
   },
   {
     path: "profile-edit", component: ProfileEditComponent
+  },
+  {
+    path: "candidate-search", component: CandidateSearchComponent
   }
+  
+
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
