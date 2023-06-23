@@ -10,7 +10,7 @@ import { CompanyRegisterComponent } from './components/company/company-register/
 import { CompanyLoginComponent } from './components/company/company-login/company-login.component';
 import { CandidateSearchComponent } from './components/company/candidate-search/candidate-search.component';
 import { CompanyProfileEditComponent } from './components/company/company-profile-edit/company-profile-edit.component';
-
+import { CompanyProfileComponent } from './components/company/company-profile/company-profile.component';
 
 
 const routes: Routes = [
@@ -43,12 +43,8 @@ const routes: Routes = [
     path: "candidate-search", component: CandidateSearchComponent
   },
   {
-    path: "company-profile-edit", component: CompanyProfileEditComponent
+    path: "company-profile", component: CompanyProfileComponent
   }
-  
-  
-
-  
 
 ];
 
