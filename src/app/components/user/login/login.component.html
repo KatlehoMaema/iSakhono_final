@@ -21,7 +21,7 @@
        
           
           
-          <form (submit)="login(userData)">
+          <div >
             <div class="form-group" id="email">
               <!-- <label for="email">Email : </label> -->
               <input type="text" name="email" class="form-control" placeholder="Email"id="emailInput">
@@ -34,9 +34,9 @@
               </div>
             </div>
             <div class="text-center" id="buttonForsignin">
-              <input type="submit" class="btn btn-my" value="Login" id="signinButton">
+              <input type="submit" class="btn btn-my" value="Login" (click)="login()"  id="signinButton">
             </div>
-          </form>
+          </div>
           
           
           

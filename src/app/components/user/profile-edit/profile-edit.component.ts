@@ -29,6 +29,9 @@ export class ProfileEditComponent {
     console.log(this.userDetails)
     this.user.push(this.userDetails)
     // console.log(this.user)
+
+
+    window.location.replace("user-profile")
     
   }
 

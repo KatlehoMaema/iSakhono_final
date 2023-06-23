@@ -21,8 +21,9 @@ export class LoginComponent  {
     var msg = event.target.value;
     // this.user.changeData(msg);
   }
-  login(data:any) {
+  login() {
     // this.user.changeData(data);
+    window.location.replace("user-profile") // last line
   }
 
 }

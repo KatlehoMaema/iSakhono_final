@@ -9,6 +9,8 @@ export class ProfileComponent {
 
   searchJobs(){
     
+
+    window.location.replace("search-job")
   }
 
 }
