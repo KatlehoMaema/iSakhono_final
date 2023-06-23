@@ -21,7 +21,7 @@ input {
 .container{
     background-color: lightgrey;
     width: 350px;
-    height: 650px;
+    height: 500px;
     align-content: center;
     align-items: center;
     margin-left: 7%;
@@ -37,10 +37,6 @@ input {
     margin-top: 30px;
 }
 
-#dateOfBirth {
-    align-content: center;
-    align-items: center;
-}
 
 h2 {
     // display: flex;
@@ -51,29 +47,12 @@ h2 {
     padding-top: 9%;
     // margin: 50px;
     padding-left: 2%;
+    // font-weight: bold;
 }
-
-img {
-    padding: 5px;
-    // margin: 56px;
-    padding-bottom: 2px;
-}
-
-h3 {
-    // padding-top: 20px;
-    align-content: center;
-    font-size: larger;
-    font-weight: bolder;
-}
-
 .left {
     position: relative;
     right: 60px;
     padding-bottom: 10px;
 
 }
-
-
-
-
 
