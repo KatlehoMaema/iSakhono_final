@@ -7,6 +7,7 @@ import { JobSearchComponent } from './components/user/job-search/job-search.comp
 import { ProfileEditComponent } from './components/user/profile-edit/profile-edit.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { CandidateSearchComponent } from './components/company/candidate-search/candidate-search.component';
+import { CompanyProfileEditComponent } from './components/company/company-profile-edit/company-profile-edit.component';
 
 
 
@@ -32,7 +33,13 @@ const routes: Routes = [
   },
   {
     path: "candidate-search", component: CandidateSearchComponent
+  },
+  {
+    path: "company-profile-edit", component: CompanyProfileEditComponent
   }
+  
+  
+
   
 
 ];
