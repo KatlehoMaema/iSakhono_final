@@ -8,6 +8,7 @@ import { ProfileEditComponent } from './components/user/profile-edit/profile-edi
 import { LoginComponent } from './components/user/login/login.component';
 import { CompanyRegisterComponent } from './components/company/company-register/company-register.component';
 import { CompanyLoginComponent } from './components/company/company-login/company-login.component';
+import { CandidateSearchComponent } from './components/company/candidate-search/candidate-search.component';
 
 
 
@@ -36,9 +37,14 @@ const routes: Routes = [
   },
   {
     path: "company-login", component: CompanyLoginComponent
+  },
+  {
+    path: "candidate-search", component: CandidateSearchComponent
   }
+  
 
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

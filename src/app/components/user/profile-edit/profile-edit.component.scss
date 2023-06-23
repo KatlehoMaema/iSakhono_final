@@ -1,68 +1,56 @@
 input {
-    display: inline-block;
+    // display: inline-block;
     padding: 1rem;
-    margin: 12px;
+    margin: 7px;
     box-sizing: border-box;
     border-radius: 30px;
-    color: grey;
-    // background-color: white;
-    outline-color: white;
-    // outline-style: solid;
-    outline-color: white;
-    border: white;
-    align-items: center;
-    text-align: center;
-    // width: 560px;
-    // height: 50px;
-    
-
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .btn {
-    margin: 15%;
-    margin-right: 50%;
+    margin-left: 35%;
     border-radius: 30px;
-    box-sizing: border-box;
-    width: 100px;
-    color: white;
-    font-size: medium;
+    width: 140px;
+    height: 50px;
     background-color: #3A015C;
     border: #3A015C;
-    align-content: center;
-    padding: 1%;
-    padding-left: 10px;
+    
 }
  
 .container{
     background-color: lightgrey;
     width: 350px;
-    height: 570px;
+    height: 650px;
     align-content: center;
     align-items: center;
     margin-left: 7%;
     border-radius: 30px;
-    padding: 10px;
+    padding: 15px;
+    margin: 40px;
 
 }
 
 .container-2 {
-    background-color:#010144 ;
+    background-color: #010144;
+    height: 90px;
+    margin-top: 30px;
 }
 
-#gender {
+#dateOfBirth {
     align-content: center;
     align-items: center;
 }
 
 h2 {
+    // display: flex;
+    align-items: center;
     color: white;
-    justify-content: center;
     justify-items: center;
     margin-left: 22%;
-    padding-bottom: 30px;
-    padding: 10%;
+    padding-top: 9%;
     // margin: 50px;
-    
+    padding-left: 2%;
 }
 
 img {
@@ -81,3 +69,6 @@ h3 {
 #phonenumber {
     width: 400px;
 }
+
+
+

@@ -7,11 +7,11 @@
   
   html,body {
     font-family: 'Be Vietnam Pro', sans-serif;
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden
+    overflow-x: hidden !important;
   }
   
   :root {
@@ -21,13 +21,13 @@
     --shadow-color: #E8E8E8;
   }
   
-  button.primary {
-    padding: 10px;
-    border: solid 1px var(--primary-color);
-    background: var(--primary-color);
-    color: white;
-    border-radius: 8px;
-  }
+  // button.primary {
+  //   padding: 10px;
+  //   border: solid 1px var(--primary-color);
+  //   background: var(--primary-color);
+  //   color: white;
+  //   border-radius: 8px;
+  // }
 
   a {
     text-decoration: none;
