@@ -6,11 +6,7 @@
     <span style="margin-right: 30px;" class="navReg">  Register</span>
     <span class="navLog"><a routerLink="/sign-in">Login</a></span>
   </div>
-<<<<<<< HEAD
-    <form (submit)="signup(userData)">
-=======
-    <form >
->>>>>>> deed6c4dd84d763919abdf01c38728a05c5d9139
+    <form (submit)="signup()">
       <div class="text-center login" id="existingAccount">
         Already have an account? <a routerLink="/sign-in" id="loginName"> Login </a> here.
       </div>
@@ -21,7 +17,7 @@
           <div class="col offsetcol offset">
             <div class="card-auth">
               
-                <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
+                <form name="form" (ngSubmit)="f.form.valid && signup()" #f="ngForm" novalidate>
                   <div class="form-group" id="fullname">
                       <!-- <label for="name">Full Name :</label> -->
                       <input 

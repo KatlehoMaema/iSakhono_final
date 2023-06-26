@@ -25,7 +25,7 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
     // this.user.currentUserData.subscribe((userData: any) => this.userData = userData)
   }
-  signup(data: any){
+  signup(){
     
     // this.user.changeData(data);
   }
