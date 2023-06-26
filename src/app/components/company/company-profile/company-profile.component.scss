@@ -1,83 +1,55 @@
+input {
+    // display: inline-block;
+    padding: 1rem;
+    margin: 7px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
 
-.nav-bar {
+
+ 
+.container{
+    background-color: lightgrey;
+    width: 350px;
+    height: 650px;
+    align-content: center;
+    align-items: center;
+    margin-left: 7%;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 40px;
+
+}
+
+.container-2 {
     background-color: #010144;
+    height: 90px;
+    margin-top: 30px;
 }
-.container {
-    display: inline-block;
-}
-h2{
-    color: rgb(112, 81, 81);
-    justify-content: center;
+
+
+h2 {
+    // display: flex;
+    align-items: center;
+    color: white;
     justify-items: center;
     margin-left: 22%;
-    padding-bottom: 30px;
-    padding: 10%;
+    padding-top: 9%;
+    // margin: 50px;
+    padding-left: 2%;
 }
 
-h4 {
-    margin: 1px;
-    padding: 1px;
-    font-size: larger;
-    margin-left: 20%;
+img {
+    padding: 5px;
+    // margin: 56px;
+    padding-bottom: 2px;
 }
 
 h3 {
-    padding: 1px;
-    margin: 1px;
-    margin-left: 20%;
-    padding-left: 10;
-    
-}
-
-p {
-    padding: 1px;
-    margin: 1px;
-    padding-right: 100px;
-    margin-left: 20%;
-}
-
-h5 {
-    background-color: lightgrey;
-    width: 250px;
-    height: 90px;
-    padding: 25px;
-    border-radius: 20px;
-    font-size: medium;
-}
-
-h6 {
-    background-color: lightgrey;
-    width: 250px;
-    height: 90px;
-    border-radius: 20px;
-    padding: 23px;
-    font-size: medium;
-}
-
-#create {
-    background-color: white;
-    padding: 5px;
-}
-
-#team {
-    background-color: white;
-    // padding: 10px;
-    // margin: 5px;
-}
-
-#time {
-    background-color: white;
-    // padding: 10px;
-    margin: 5px;
-}
-
-#pen {
-    // padding: px;
-    margin: 10px;
-    padding-left: 30px;
-}
-
-#left {
-    color: white;
-    padding-left: 23px;
+    // padding-top: 20px;
+    align-content: center;
+    font-size: larger;
+    font-weight: bolder;
 }
