@@ -14,6 +14,8 @@ import { SignupComponent } from './components/user/signup/signup.component';
 import { CompanyRegisterComponent } from './components/company/company-register/company-register.component';
 import { CompanyLoginComponent } from './components/company/company-login/company-login.component';
 import { CompanyProfileEditComponent } from './components/company/company-profile-edit/company-profile-edit.component';
+import { BottomNavbarComponent } from './components/user/bottom-navbar/bottom-navbar.component';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { CompanyProfileEditComponent } from './components/company/company-profil
     SignupComponent,
     CompanyRegisterComponent,
     CompanyLoginComponent,
-    CompanyProfileEditComponent
+    CompanyProfileEditComponent,
+    BottomNavbarComponent
   ],
   imports: [
     BrowserModule,
