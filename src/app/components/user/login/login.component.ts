@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from 'src/app/service/auth.service';
 // import { UserService } from "../../../service/user.service";
 
 @Component({
@@ -7,10 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent  {
+  form: any = {
+    username: null,
+    password: null
+  };
 
   userData: any;
   constructor(
     // private user: UserService
+    private authService: AuthService
     ) {}
 
   ngOnInit() {
@@ -23,7 +29,18 @@ export class LoginComponent  {
   }
   login() {
     // this.user.changeData(data);
-    window.location.replace("user-profile") // last line
+    const { username, password } = this.form
+
+    this.authService.login(username, password).subscribe({
+      next: data => {
+        console.log(data);
+        window.location.replace("user-profile") // last line
+      },
+      error: err => {
+        console.error(err.message)
+      }
+    })
+    
   }
 
 }
