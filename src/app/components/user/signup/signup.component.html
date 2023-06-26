@@ -6,7 +6,7 @@
     <span style="margin-right: 30px;" class="navReg">  Register</span>
     <span class="navLog"><a routerLink="/sign-in">Login</a></span>
   </div>
-    <form (submit)="register(userData)">
+    <form (submit)="signup()">
       <div class="text-center login" id="existingAccount">
         Already have an account? <a routerLink="/sign-in" id="loginName"> Login </a> here.
       </div>
@@ -17,19 +17,43 @@
           <div class="col offsetcol offset">
             <div class="card-auth">
               
-                <form>
+                <form name="form" (ngSubmit)="f.form.valid && signup()" #f="ngForm" novalidate>
                   <div class="form-group" id="fullname">
                       <!-- <label for="name">Full Name :</label> -->
-                      <input type="text" name="Full name" class="form-control" placeholder=" Full Name"
-                       id="fullnameInput">
+                      <input 
+                      type="text" name="Full name" class="form-control" placeholder=" Full Name"
+                       id="fullnameInput"
+                       name="username"
+                       [(ngModel)]="form.username"
+                       #username="ngModel"
+                       [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
+                       >
                   </div>
                   <div class="form-group" id="email">
                       <!-- <label for="email">Email :</label> -->
-                      <input type="text" name="email" class="form-control" placeholder=" Email" id="emailInput">
+                      <input 
+                        type="email" name="email" 
+                        class="form-control" placeholder=" Email" 
+                        id="emailInput"
+                        name="email"
+                        [(ngModel)]="form.email"
+                        #email="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && email.errors }"
+                        >
                   </div>
                   <div class="form-group" id="password">
                       <!-- <label for="password">Password :</label> -->
-                      <input type="password" name="password" class="form-control" placeholder=" Password" id="passwordInput">
+                      <input 
+                        type="password" name="password" 
+                        class="form-control" placeholder=" Password" 
+                        id="passwordInput"
+                        name="password"
+                        [(ngModel)]="form.password"
+                        required
+                        minlength="6"
+                        #password="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
+                        >
                   </div>
                   <div class="form-group" id="c_password">
                       <!-- <label for="c_password">Confirm Password :</label> -->
