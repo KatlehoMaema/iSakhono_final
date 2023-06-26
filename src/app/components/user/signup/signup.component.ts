@@ -14,9 +14,10 @@ export class SignupComponent implements OnInit {
     email: null,
     password: null
   };
-  userData: any;
-  keyboard: any;
-  value = "";
+  isSuccessful = false;
+  isSignUpFailed = false;
+  errorMessage = '';
+
   constructor(
     // private user: UserService
     private authService: AuthService
@@ -25,8 +26,26 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
     // this.user.currentUserData.subscribe((userData: any) => this.userData = userData)
   }
-  signup(){
-    
+  register(){
+    const { username, email, password } = this.form;
+    console.log(this.form)
+    this.authService.registerUser(username,email,password).subscribe({
+      next: data => {
+        console.log(data)
+        console.log("Hello WOrld")
+        this.isSuccessful = true;
+        if(this.isSuccessful){
+          // this.authService.login(username,password).subscribe()
+        }
+        this.isSignUpFailed = false;
+        window.location.replace("sign-in") // last line
+      },
+      error: err => {
+        
+        this.errorMessage = err.error.message;
+        this.isSignUpFailed = true;
+      }
+    })
     // this.user.changeData(data);
   }
   
