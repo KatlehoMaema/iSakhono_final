@@ -63,6 +63,9 @@
                       <input type="submit" class="btn btn-my" value="Register" id="registerButton">
                   </div>
                   
+                  <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+                    Signup failed!<br />{{ errorMessage }}
+                  </div>
                   
                 </form>
   

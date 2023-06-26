@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from 'src/app/service/auth.service';
+import { StorageService } from 'src/app/service/storage.service';
 // import { UserService } from "../../../service/user.service";
 
 @Component({
@@ -12,15 +13,22 @@ export class LoginComponent  {
     username: null,
     password: null
   };
+  isLoggedIn = false;
+  isLoginFailed = false;
+  errorMessage = '';
 
-  userData: any;
   constructor(
     // private user: UserService
-    private authService: AuthService
+    private authService: AuthService,
+    private storageService: StorageService
     ) {}
 
   ngOnInit() {
     // this.user.currentUserData.subscribe(userData => (this.userData = userData));
+    if (this.storageService.isLoggedIn()) {
+      this.isLoggedIn = true;
+      // this.roles = this.storageService.getUser().roles;
+    }
   }
 
   changeData(event:any) {
@@ -34,10 +42,17 @@ export class LoginComponent  {
     this.authService.login(username, password).subscribe({
       next: data => {
         console.log(data);
+        
+        this.storageService.saveUser(data);
+
+        this.isLoginFailed = false;
+        this.isLoggedIn = true;
         window.location.replace("user-profile") // last line
       },
       error: err => {
         console.error(err.message)
+        this.errorMessage = err.error.message;
+        this.isLoginFailed = true;
       }
     })
     

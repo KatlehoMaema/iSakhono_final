@@ -14,9 +14,10 @@ export class SignupComponent implements OnInit {
     email: null,
     password: null
   };
-  userData: any;
-  keyboard: any;
-  value = "";
+  isSuccessful = false;
+  isSignUpFailed = false;
+  errorMessage = '';
+
   constructor(
     // private user: UserService
     private authService: AuthService
@@ -32,10 +33,14 @@ export class SignupComponent implements OnInit {
       next: data => {
         console.log(data)
         console.log("Hello WOrld")
+        this.isSuccessful = true;
+        this.isSignUpFailed = false;
         window.location.replace("user-profile") // last line
       },
       error: err => {
-        console.error(err.message)
+        
+        this.errorMessage = err.error.message;
+        this.isSignUpFailed = true;
       }
     })
     // this.user.changeData(data);

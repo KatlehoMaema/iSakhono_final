@@ -13,9 +13,9 @@
 </div>
 
 <div class="content">
-  <h3> Ayabonga Qanda</h3>
-  <h4> Plumber</h4>
-  <p>ayabonga@gmail.com
+  <h3> {{currentUser.username}}</h3>
+  <h4> {{currentUser.skills}}</h4>
+  <p>{{currentUser.email}}
   <p>
 </div>
 
@@ -23,7 +23,7 @@
   <h5> 
     <img src="../assets/suitcase1-svgrepo-com.svg" alt="" class="case" srcset="" height="30px" width="35px"> 
     Work Experience 
-    <a routerLink="/profile-edit"><img src="../assets/pen-1319-svgrepo-com (1).svg" alt="" class="pen"> </a>
+    <a routerLink="/profile-edit/{{currentUser.id}}"><img src="../assets/pen-1319-svgrepo-com (1).svg" alt="" class="pen"> </a>
   </h5>
   <div class="experience">
     <p>I have been freelancing since 2015 x x x x x
