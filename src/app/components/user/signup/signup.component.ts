@@ -19,7 +19,7 @@ export class SignupComponent {
   ngOnInit() {
     // this.user.currentUserData.subscribe((userData: any) => this.userData = userData)
   }
-  register(data: any){
+  signup(data: any){
     
     // this.user.changeData(data);
   }
