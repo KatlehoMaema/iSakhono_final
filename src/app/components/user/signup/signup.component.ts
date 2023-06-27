@@ -34,8 +34,11 @@ export class SignupComponent implements OnInit {
         console.log(data)
         console.log("Hello WOrld")
         this.isSuccessful = true;
+        if(this.isSuccessful){
+          // this.authService.login(username,password).subscribe()
+        }
         this.isSignUpFailed = false;
-        window.location.replace("user-profile") // last line
+        window.location.replace("sign-in") // last line
       },
       error: err => {
         

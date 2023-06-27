@@ -30,7 +30,7 @@ export class AuthService {
   }
 
   logout(){
-    return this.http.post(auth_api + "signout", {})
+    sessionStorage.clear()
   }
 
   updateUser(data: any, id: any){
