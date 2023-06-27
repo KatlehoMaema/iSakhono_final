@@ -1,0 +1,56 @@
+.nav{
+    background-color: #010144;
+    width: 450px;
+    height: 60px;
+    margin-top: 3%;
+}
+
+.nav-item-1 {
+    margin-top: -9px;
+    right: 60%;
+
+}
+
+.nav-item-2{
+    position: relative;
+    left:8%;
+    margin-top: -9px;
+    width: 4px;
+    height: 4px;
+}
+
+.nav-item-3{
+    position: relative;
+    left: 25%;
+    margin-bottom: 20%;
+    margin-top: -2%;
+}
+
+// .nav-item-4 {
+//     position: relative;
+//     right: 2%;
+//     margin-bottom: 20%;
+//     margin-top: -2%;
+// }
+
+#home{
+    margin-top: 30px;
+    position: relative;
+    right: 55px;
+    color: white;
+} 
+
+#profile{
+    margin-top: 30px;
+    position: relative;
+    left: 8%;
+    color: white; 
+}
+
+#logout {
+    margin-top: 30px;
+    position: relative;
+     left: 12%;
+    color: white; 
+    margin-bottom: 500px;
+}

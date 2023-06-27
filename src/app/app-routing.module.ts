@@ -13,6 +13,7 @@ import { CompanyProfileEditComponent } from './components/company/company-profil
 import { BottomNavbarComponent } from './components/user/bottom-navbar/bottom-navbar.component';
 
 import { CompanyProfileComponent } from './components/company/company-profile/company-profile.component';
+import { CompanyBottomNavbarComponent } from './components/company/company-bottom-navbar/company-bottom-navbar.component';
 
 
 const routes: Routes = [
@@ -33,7 +34,7 @@ const routes: Routes = [
     path: "search-job", component: JobSearchComponent
   },
   {
-    path: "profile-edit/:id", component: ProfileEditComponent
+    path: "profile-edit", component: ProfileEditComponent
   },
   {
     path: "company-register", component: CompanyRegisterComponent
@@ -48,7 +49,13 @@ const routes: Routes = [
     path: "company-profile", component: CompanyProfileComponent
   },
   {
+    path: "company-profile-edit", component: CompanyProfileEditComponent
+  },
+  {
     path: "bottom-navbar", component: BottomNavbarComponent
+  },
+  {
+    path: "company-bottom-navbar", component: CompanyBottomNavbarComponent
   }
 
 ];
