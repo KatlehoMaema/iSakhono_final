@@ -6,7 +6,7 @@
     <span style="margin-right: 30px;" class="navReg">  Register</span>
     <span class="navLog"><a routerLink="/sign-in">Login</a></span>
   </div>
-    <form (submit)="register(userData)">
+    <form>
       <div class="text-center login" id="existingAccount">
         Already have an account? <a routerLink="/sign-in" id="loginName"> Login </a> here.
       </div>
@@ -17,19 +17,43 @@
           <div class="col offsetcol offset">
             <div class="card-auth">
               
-                <form>
+                <form >
                   <div class="form-group" id="fullname">
                       <!-- <label for="name">Full Name :</label> -->
-                      <input type="text" name="Full name" class="form-control" placeholder=" Full Name"
-                       id="fullnameInput">
+                      <input 
+                      type="text" name="Full name" class="form-control" placeholder=" Full Name"
+                       id="fullnameInput"
+                       name="username"
+                       
+                       
+                       
+                       >
                   </div>
                   <div class="form-group" id="email">
                       <!-- <label for="email">Email :</label> -->
-                      <input type="text" name="email" class="form-control" placeholder=" Email" id="emailInput">
+                      <input 
+                        type="email" name="email" 
+                        class="form-control" placeholder=" Email" 
+                        id="emailInput"
+                        name="email"
+                        [(ngModel)]="form.email"
+                        #email="ngModel"
+                        
+                        >
                   </div>
                   <div class="form-group" id="password">
                       <!-- <label for="password">Password :</label> -->
-                      <input type="password" name="password" class="form-control" placeholder=" Password" id="passwordInput">
+                      <input 
+                        type="password" name="password" 
+                        class="form-control" placeholder=" Password" 
+                        id="passwordInput"
+                        name="password"
+                        [(ngModel)]="form.password"
+                        required
+                        minlength="6"
+                        #password="ngModel"
+                        
+                        >
                   </div>
                   <div class="form-group" id="c_password">
                       <!-- <label for="c_password">Confirm Password :</label> -->
@@ -39,10 +63,13 @@
                       <input type="submit" class="btn btn-my" value="Register" id="registerButton">
                   </div>
                   
+                  <div class="alert alert-warning">
+                    Signup failed!<br />{{ errorMessage }}
+                  </div>
                   
                 </form>
   
-  </div>
+   </div>
           </div>
       </div>
   

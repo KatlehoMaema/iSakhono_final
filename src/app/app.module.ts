@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +16,9 @@ import { SignupComponent } from './components/user/signup/signup.component';
 import { CompanyRegisterComponent } from './components/company/company-register/company-register.component';
 import { CompanyLoginComponent } from './components/company/company-login/company-login.component';
 import { CompanyProfileEditComponent } from './components/company/company-profile-edit/company-profile-edit.component';
+import { BottomNavbarComponent } from './components/user/bottom-navbar/bottom-navbar.component';
+import { CompanyBottomNavbarComponent } from './components/company/company-bottom-navbar/company-bottom-navbar.component';
+
 
 @NgModule({
   declarations: [
@@ -28,11 +33,15 @@ import { CompanyProfileEditComponent } from './components/company/company-profil
     SignupComponent,
     CompanyRegisterComponent,
     CompanyLoginComponent,
-    CompanyProfileEditComponent
+    CompanyProfileEditComponent,
+    BottomNavbarComponent,
+    CompanyBottomNavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

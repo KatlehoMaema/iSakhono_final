@@ -21,20 +21,37 @@
        
           
           
-          <form (submit)="login(userData)">
+          <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
             <div class="form-group" id="email">
               <!-- <label for="email">Email : </label> -->
-              <input type="text" name="email" class="form-control" placeholder="Email"id="emailInput">
+              <input 
+                type="text" name="email" 
+                class="form-control" placeholder="Email"id="emailInput"
+                name="username"
+                [(ngModel)]="form.username"
+                required
+                #username="ngModel"
+                [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
+                >
             </div>
             <div class="form-group" id="password">
               <!-- <label for="password">Password : </label> -->
-              <input type="password" name="password" class="form-control" placeholder="Password"  id="passwordInput">
+              <input 
+                type="password" 
+                name="password" class="form-control" 
+                placeholder="Password"  id="passwordInput"
+                [(ngModel)]="form.password"
+                required
+                minlength="6"
+                #password="ngModel"
+                [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
+                >
               <div class="text-right forget-pass">
                 <a routerLink="/forget-password" id="forgotPassword">Forget Password ?</a>
               </div>
             </div>
             <div class="text-center" id="buttonForsignin">
-              <input type="submit" class="btn btn-my" value="Login" id="signinButton">
+              <input type="submit" class="btn btn-my" value="Login"  id="signinButton">
             </div>
           </form>
           
