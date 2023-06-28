@@ -18,8 +18,9 @@ import { CompanyLoginComponent } from './components/company/company-login/compan
 import { CompanyProfileEditComponent } from './components/company/company-profile-edit/company-profile-edit.component';
 import { BottomNavbarComponent } from './components/user/bottom-navbar/bottom-navbar.component';
 import { CompanyBottomNavbarComponent } from './components/company/company-bottom-navbar/company-bottom-navbar.component';
+import { ApplicationFormComponent } from './components/user/application-form/application-form.component';
+import { CompanyPostingJobFeedbackComponent } from './components/company/company-posting-job-feedback/company-posting-job-feedback.component';
 import { ApplicationFeedbackComponent } from './components/user/application-feedback/application-feedback.component';
-
 
 @NgModule({
   declarations: [
@@ -37,7 +38,9 @@ import { ApplicationFeedbackComponent } from './components/user/application-feed
     CompanyProfileEditComponent,
     BottomNavbarComponent,
     CompanyBottomNavbarComponent,
-    ApplicationFeedbackComponent
+    ApplicationFeedbackComponent,
+    CompanyPostingJobFeedbackComponent,
+    ApplicationFormComponent
   ],
   imports: [
     BrowserModule,

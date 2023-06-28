@@ -15,6 +15,7 @@ import { BottomNavbarComponent } from './components/user/bottom-navbar/bottom-na
 import { CompanyProfileComponent } from './components/company/company-profile/company-profile.component';
 import { CompanyBottomNavbarComponent } from './components/company/company-bottom-navbar/company-bottom-navbar.component';
 import { ApplicationFeedbackComponent } from './components/user/application-feedback/application-feedback.component';
+import { CompanyPostingJobFeedbackComponent } from './components/company/company-posting-job-feedback/company-posting-job-feedback.component';
 
 
 const routes: Routes = [
@@ -60,6 +61,9 @@ const routes: Routes = [
   },
   {
     path: "application-feedback", component: ApplicationFeedbackComponent
+  },
+  {
+    path: "company-posting-job-feedback", component: CompanyPostingJobFeedbackComponent
   }
 
 ];
