@@ -14,7 +14,7 @@ export class ProfileComponent implements OnInit{
 
   ngOnInit(): void {
     this.currentUser = this.storage.getUser()
-    console.log(this.currentUser)
+    
   }
   searchJobs(){
     
