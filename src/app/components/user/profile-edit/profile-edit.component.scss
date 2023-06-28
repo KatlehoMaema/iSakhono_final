@@ -21,7 +21,7 @@ input {
 .container{
     background-color: lightgrey;
     width: 350px;
-    height: 650px;
+    height: 680px;
     align-content: center;
     align-items: center;
     margin-left: 7%;
@@ -74,6 +74,11 @@ h3 {
 
 }
 
+.form-control{
+    border-radius: 30px;
+    padding: 16px 70px;
+    margin: 7px;
+}
 
 
 
