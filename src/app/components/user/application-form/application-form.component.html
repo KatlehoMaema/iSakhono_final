@@ -1,1 +1,154 @@
-<p>application-form works!</p>
+<option></option>
+<h2>
+    <img src="../assets/left-arrow-backup-2-svgrepo-com (3).svg" alt="" class="left" srcset="" height="50px" width="50px"> 
+    Job Application Form
+  </h2>
+  
+
+
+
+<div class="container">
+<div class="row mx-0 justify-content-center">
+<div class="col-md-7 col-lg-5 px-lg-2 col-xl-4 px-xl-0 px-xxl-3">
+<form
+  method="POST"
+  class="w-100 rounded-1 p-4 border bg-white"
+  enctype="multipart/form-data"
+>
+  <label class="d-block mb-4">
+    <!-- <span class="form-label d-block">Full name</span> -->
+    <input
+      required
+      name="name"
+      type="text"
+      class="form-control"
+      placeholder="Full name"
+    />
+  </label>
+
+    <label class="d-block mb-4">
+        <!-- <span class="form-label d-block">Email address</span> -->
+        <input
+          required
+          name="Id"
+          type="Id"
+          class="form-control"
+          placeholder="Id"
+        />
+      </label>
+
+    <label class="d-block mb-4">
+    <!-- <span class="form-label d-block">Id:</span> -->
+    <input
+      required
+      name="Contact"
+      type="contact"
+      class="form-control"
+      placeholder="Contact"
+    />
+    </label>
+
+    <label class="d-block mb-4">
+    <!-- <span class="form-label d-block">Email address</span> -->
+    <input
+      required
+      name="email"
+      type="email"
+      class="form-control"
+      placeholder="Email address"
+    />
+    </label>
+    <label class="d-block mb-4">
+        <!-- <span class="form-label d-block">Email address</span> -->
+        <input
+          required
+          name="Address"
+          type="Address"
+          class="form-control"
+          placeholder="Address"
+        />
+        </label>
+
+
+
+    <label class="d-block mb-4">
+    <!-- <span class="form-label d-block">Years of experience</span> -->
+    <select required name="experience" class="form-select">
+      <option>Years of experience</option>
+      <option>1 - 2 years</option>
+      <option>2 - 4 years</option>
+  <option>7 - 10 years</option>
+      <option>10+ years</option>
+    </select>
+  </label>
+
+  <label class="d-block mb-4">
+    <!-- <span class="form-label d-block">Tell us more about yourself</span> -->
+    <textarea
+      name="message"
+      class="form-control"
+      rows="3"
+      placeholder="What motivates you?"
+    ></textarea>
+  </label>
+
+  <label class="d-block mb-4">
+    <span class="form-label d-block">Upload Your Work</span>
+    <input required name="cv" type="file" class="form-control" />
+  </label>
+
+  <!-- <div class="mb-4">
+    <div>
+      <div class="form-check">
+        <label class="d-block">
+          <input
+            type="radio"
+            class="form-check-input"
+            name="remote"
+            value="yes"
+            checked
+          />
+          <span class="form-check-label"
+            >You'd like to work remotely</span
+          >
+        </label>
+      </div>
+    </div>
+    <div>
+      <label class="form-check">
+        <input
+          type="radio"
+          class="form-check-input"
+          name="remote"
+          value="no"
+        />
+        <span class="form-check-label">You'd prefer to work onsite</span>
+      </label>
+    </div>
+  </div> -->
+
+  <div class="mb-3">
+    <button type="submit" class="btn btn-primary px-3 rounded-3">
+      Submit Application
+    </button>
+  </div>
+
+  <div class="d-block text-end">
+    <div class="small">
+      by
+      <a
+        href="https://iSakhono.com"
+        class="text-dark text-decoration-none"
+        target="_blank"
+        >iSakhono</a
+      >
+    </div>
+  </div>
+</form>
+</div>
+</div>
+</div>
+
+<app-bottom-navbar></app-bottom-navbar>
+
+
