@@ -19,7 +19,8 @@ import { CompanyProfileEditComponent } from './components/company/company-profil
 import { BottomNavbarComponent } from './components/user/bottom-navbar/bottom-navbar.component';
 import { CompanyBottomNavbarComponent } from './components/company/company-bottom-navbar/company-bottom-navbar.component';
 import { ApplicationFormComponent } from './components/user/application-form/application-form.component';
-
+import { CompanyPostingJobFeedbackComponent } from './components/company/company-posting-job-feedback/company-posting-job-feedback.component';
+import { ApplicationFeedbackComponent } from './components/user/application-feedback/application-feedback.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import { ApplicationFormComponent } from './components/user/application-form/app
     BottomNavbarComponent,
     CompanyBottomNavbarComponent,
     ApplicationFeedbackComponent,
-CompanyPostingJobFeedbackComponent
+    CompanyPostingJobFeedbackComponent,
     ApplicationFormComponent
   ],
   imports: [
