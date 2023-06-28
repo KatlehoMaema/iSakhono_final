@@ -21,6 +21,8 @@ import { CompanyBottomNavbarComponent } from './components/company/company-botto
 import { ApplicationFormComponent } from './components/user/application-form/application-form.component';
 import { CompanyPostingJobFeedbackComponent } from './components/company/company-posting-job-feedback/company-posting-job-feedback.component';
 import { ApplicationFeedbackComponent } from './components/user/application-feedback/application-feedback.component';
+import { PostJobComponent } from './components/company/post-job/post-job.component';
+
 
 @NgModule({
   declarations: [
@@ -38,6 +40,7 @@ import { ApplicationFeedbackComponent } from './components/user/application-feed
     CompanyProfileEditComponent,
     BottomNavbarComponent,
     CompanyBottomNavbarComponent,
+    PostJobComponent,
     ApplicationFeedbackComponent,
     CompanyPostingJobFeedbackComponent,
     ApplicationFormComponent

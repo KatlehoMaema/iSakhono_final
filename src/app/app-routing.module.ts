@@ -16,7 +16,7 @@ import { CompanyProfileComponent } from './components/company/company-profile/co
 import { CompanyBottomNavbarComponent } from './components/company/company-bottom-navbar/company-bottom-navbar.component';
 import { ApplicationFeedbackComponent } from './components/user/application-feedback/application-feedback.component';
 import { CompanyPostingJobFeedbackComponent } from './components/company/company-posting-job-feedback/company-posting-job-feedback.component';
-
+import { PostJobComponent } from './components/company/post-job/post-job.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "home", pathMatch: "full"},
@@ -64,7 +64,11 @@ const routes: Routes = [
   },
   {
     path: "company-posting-job-feedback", component: CompanyPostingJobFeedbackComponent
+  },
+  {
+    path: "job-post", component: PostJobComponent
   }
+
 
 ];
 
