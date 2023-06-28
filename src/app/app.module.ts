@@ -18,7 +18,11 @@ import { CompanyLoginComponent } from './components/company/company-login/compan
 import { CompanyProfileEditComponent } from './components/company/company-profile-edit/company-profile-edit.component';
 import { BottomNavbarComponent } from './components/user/bottom-navbar/bottom-navbar.component';
 import { CompanyBottomNavbarComponent } from './components/company/company-bottom-navbar/company-bottom-navbar.component';
+<<<<<<< HEAD
 import { ApplicationFeedbackComponent } from './components/user/application-feedback/application-feedback.component';
+=======
+import { ApplicationFormComponent } from './components/user/application-form/application-form.component';
+>>>>>>> 6901661d77c893fb34566f68e064c15598a80e08
 
 
 @NgModule({
@@ -37,7 +41,11 @@ import { ApplicationFeedbackComponent } from './components/user/application-feed
     CompanyProfileEditComponent,
     BottomNavbarComponent,
     CompanyBottomNavbarComponent,
+<<<<<<< HEAD
     ApplicationFeedbackComponent
+=======
+    ApplicationFormComponent
+>>>>>>> 6901661d77c893fb34566f68e064c15598a80e08
   ],
   imports: [
     BrowserModule,
