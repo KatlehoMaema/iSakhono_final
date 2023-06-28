@@ -15,7 +15,7 @@ import { BottomNavbarComponent } from './components/user/bottom-navbar/bottom-na
 import { CompanyProfileComponent } from './components/company/company-profile/company-profile.component';
 import { CompanyBottomNavbarComponent } from './components/company/company-bottom-navbar/company-bottom-navbar.component';
 import { ApplicationFeedbackComponent } from './components/user/application-feedback/application-feedback.component';
-
+import { PostJobComponent } from './components/company/post-job/post-job.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "home", pathMatch: "full"},
@@ -60,7 +60,11 @@ const routes: Routes = [
   },
   {
     path: "application-feedback", component: ApplicationFeedbackComponent
+  },
+  {
+    path: "job-post", component: PostJobComponent
   }
+
 
 ];
 

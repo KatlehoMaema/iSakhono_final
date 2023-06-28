@@ -19,6 +19,7 @@ import { CompanyProfileEditComponent } from './components/company/company-profil
 import { BottomNavbarComponent } from './components/user/bottom-navbar/bottom-navbar.component';
 import { CompanyBottomNavbarComponent } from './components/company/company-bottom-navbar/company-bottom-navbar.component';
 import { ApplicationFormComponent } from './components/user/application-form/application-form.component';
+import { PostJobComponent } from './components/company/post-job/post-job.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { ApplicationFormComponent } from './components/user/application-form/app
     CompanyProfileEditComponent,
     BottomNavbarComponent,
     CompanyBottomNavbarComponent,
-    ApplicationFormComponent
+    ApplicationFormComponent,
+    PostJobComponent
   ],
   imports: [
     BrowserModule,
