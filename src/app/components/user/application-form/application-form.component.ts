@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./application-form.component.scss']
 })
 export class ApplicationFormComponent {
+  
 
 }
