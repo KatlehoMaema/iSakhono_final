@@ -18,6 +18,7 @@ import { CompanyLoginComponent } from './components/company/company-login/compan
 import { CompanyProfileEditComponent } from './components/company/company-profile-edit/company-profile-edit.component';
 import { BottomNavbarComponent } from './components/user/bottom-navbar/bottom-navbar.component';
 import { CompanyBottomNavbarComponent } from './components/company/company-bottom-navbar/company-bottom-navbar.component';
+import { ApplicationFeedbackComponent } from './components/user/application-feedback/application-feedback.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { CompanyBottomNavbarComponent } from './components/company/company-botto
     CompanyLoginComponent,
     CompanyProfileEditComponent,
     BottomNavbarComponent,
-    CompanyBottomNavbarComponent
+    CompanyBottomNavbarComponent,
+    ApplicationFeedbackComponent
   ],
   imports: [
     BrowserModule,
