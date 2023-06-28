@@ -43,7 +43,7 @@ span{
     justify-content: center;
     background-color: lightgrey;
     width: 400px;
-    height: 300px;
+    height: 420px;
     position: relative;
     top: 130px;
     
@@ -82,8 +82,26 @@ span{
     height: 50px;
     font-weight: bold;
     font-size: 17px;
-    color: lightgrey;
+    color: black;
 }
+
+#industry{
+    margin: 15px; 
+}
+
+#industryInput{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 15px;
+    border-color: white;
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+}
+
 
 #password{
     
@@ -100,7 +118,41 @@ span{
     height: 50px;
     font-weight: bold;
     font-size: 17px;
-    color: lightgrey;
+    color: black;
+}
+
+#location{
+    margin: 15px; 
+}
+
+#locationInput{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 15px;
+    border-color: white;
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+}
+
+#contactPerson{
+    margin: 15px; 
+}
+
+#contactpersonInput{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 15px;
+    border-color: white;
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
 }
 
 #c_password{
@@ -118,7 +170,7 @@ span{
     height: 50px;
     font-weight: bold;
     font-size: 17px;
-    color: lightgrey;
+    color: black;
 }
 
 #registerButton{
