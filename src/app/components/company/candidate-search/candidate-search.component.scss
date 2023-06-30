@@ -8,14 +8,20 @@ h2 {
     padding-right: 100px;
     padding-bottom: 15px;
     width: 100%;
-    font-size: x-large;
+    font-size: xx-large;
     font-stretch: wider;
+    position: relative;
+    right: 50px;
     
 }
 .search {
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding-right: 15px;
     width: 100%;
+    
+    
 }
 
 .title {
@@ -26,7 +32,7 @@ h2 {
 
 .left{
 position: relative;
-right: 90px;
+right: 40px;
 padding-bottom: 10px;
 
 }
@@ -36,24 +42,44 @@ Input {
     // padding-right: 30px;
     // margin: 10px;
     padding: 25px;
-    padding-right: 200px;
+    // padding-right: 200px;
     border-radius: 25px;
-    height: 15px;
+    height: 50px;
     text-align: left;
     background-color: lightgray;
-    padding-bottom: 20px;
-    width: 311px
+    // padding-bottom: 20px;
+    width: 311px;
+    position: relative;
+    top: 8px;
 }
+
+// Input {
+//     // align-items: center;
+//     // padding-right: 30px;
+//     // margin: 10px;
+//     padding: 25px;
+//     padding-right: 190px;
+//     border-radius: 25px;
+//     // height: 6px;
+//     text-align: left;
+//     background-color: lightgray;
+//     padding-bottom: 100px;
+//     width: 340px
+// }
 
 button {
     // padding: 15px;
     // margin: 10px;
     border-radius: 15px;
     background-color: lightgrey;
-    padding-left: 15px;
-    padding-bottom: 10px;
-    margin-left: 40px;
-    width: 85px;
+    // padding-left: 15px;
+    // padding-bottom: 10px;
+    // margin-left: 40px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 15px;
+    top: 8px;
     
 
 }
@@ -87,19 +113,37 @@ button {
     margin-left: 40px;
  }
 
- .btn {
-    margin-right: 35px;
+ #button-1 {
+    // margin-right: 35px;
+    position: relative;
+    left: 40px;
+    bottom: 47px;
     size: 10px;
     font-size: small;
     width: 108px;
-    margin-left: 35px;
-    margin-bottom: 200px;
+    // margin-left: 35px;
+    // margin-bottom: 200px;
     
  }
+
+ #button-2 {
+    // margin-right: 35px;
+    position: relative;
+    left: 40px;
+    bottom: 47px;
+    size: 10px;
+    font-size: small;
+    width: 108px;
+    // margin-left: 35px;
+    // margin-bottom: 200px;
+    
+ }
+
 
  .card-title{
     font-size: large;
     position: relative;
+    top: 20px;
     
  }
 
@@ -107,7 +151,20 @@ button {
      color: rgb(82, 81, 81);
      font-weight: bolder;
      text-align: center;
+     position: relative;
+     bottom: -10px;
+ }
+
+ h6{
+    position: relative;
+    left: 50px;
+    bottom: 25px;
  }
  
+ .card-img{
+    position: relative;
+    top: 10px;
+    right: 40px;
+ }
 
  
