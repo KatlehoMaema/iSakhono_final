@@ -14,7 +14,11 @@ export class UserService {
   changeData(newUserData:any)  {
     this.userDataSource.next(newUserData)
   }
+  getUser(data: any, id: any){
+    return this.http.get(user_api+id)
+  }
   updateUser(data: any, id: any){
     return this.http.put(user_api+id, data)
   }
+  
 }
