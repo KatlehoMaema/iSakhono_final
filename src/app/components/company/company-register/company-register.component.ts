@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CompanyAuthService } from 'src/app/service/company.auth.service';
 
 @Component({
   selector: 'app-company-register',
@@ -6,5 +7,50 @@ import { Component } from '@angular/core';
   styleUrls: ['./company-register.component.scss']
 })
 export class CompanyRegisterComponent {
+  
+  form: any = {
+    companyname: null,
+    company_email: null,
+    industry: null,
+    location: null,
+    contactperson: null,
+    password: null
+  };
+  isSuccessful = false;
+  isSignUpFailed = false;
+  errorMessage = '';
 
+  constructor(
+    // private user: UserService
+    private CompanyAuthService: CompanyAuthService
+    ) { }
+
+  ngOnInit() {
+    // this.company.currentUserData.subscribe((userData: any) => this.userData = userData)
+  }
+  register(){
+    const { companyname, company_email, industry, location, password } = this.form;
+    console.log(this.form)
+    this.CompanyAuthService.registerCompany(companyname,company_email,industry,location, password).subscribe({
+      next: data => {
+        console.log(data)
+        console.log("Hello WOrld")
+        this.isSuccessful = true;
+        if(this.isSuccessful){
+          // this.authService.login(username,password).subscribe()
+        }
+        this.isSignUpFailed = false;
+        window.location.replace("sign-in") // last line
+      },
+      error: err => {
+        
+        this.errorMessage = err.error.message;
+        this.isSignUpFailed = true;
+      }
+    })
+    // this.company.changeData(data);
+  }
+  
 }
+
+

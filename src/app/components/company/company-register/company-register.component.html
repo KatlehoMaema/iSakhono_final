@@ -17,31 +17,41 @@
           <div class="col offsetcol offset">
             <div class="card-auth">
               
-                <form>
+                <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
+
                   <div class="form-group" id="fullname">
                       <!-- <label for="name">Full Name :</label> -->
                       <input type="text" name="Company name" class="form-control" placeholder=" Company Name"
-                       id="fullnameInput">
+                       id="fullnameInput"  name="companyname" [(ngModel)]="form.companyname" #companyname="ngModel"
+                       [ngClass]="{ 'is-invalid': f.submitted && companyname.errors}">
                   </div>
+
                   <div class="form-group" id="email">
                     <!-- <label for="email">Email :</label> -->
-                    <input type="text" name="Company Email" class="form-control" placeholder=" Company Email" id="emailInput">
+                    <input type="text" name=" Email" class="form-control" placeholder=" Company Email" id="emailInput" name="email" [(ngModel)]="form.email" #email="ngModel"
+                    [ngClass]="{ 'is-invalid': f.submitted && email.errors}">
                 </div>
+
                   <div class="form-group" id="industry">
                     <!-- <label for="name">Full Name :</label> -->
-                    <input type="text" name="Company industry" class="form-control" placeholder=" Industry"
-                     id="industryInput">
+                    <input type="text" name=" industry" class="form-control" placeholder=" Industry"
+                     id="industryInput"  name="industry" [(ngModel)]="form.industry" #industry="ngModel"
+                     [ngClass]="{ 'is-invalid': f.submitted && industry.errors}">
                 </div>
+
                 <div class="form-group" id="location">
                   <!-- <label for="name">Full Name :</label> -->
-                  <input type="text" name="Company name" class="form-control" placeholder=" Location"
-                   id="locationInput">
+                  <input type="text" name=" location" class="form-control" placeholder=" Location"
+                   id="locationInput"  name="location" [(ngModel)]="form.location" #location="ngModel"
+                   [ngClass]="{ 'is-invalid': f.submitted && location.errors}">
               </div>
-              <div class="form-group" id="contactPerson">
+
+              <!-- <div class="form-group" id="contactPerson"> -->
                 <!-- <label for="name">Full Name :</label> -->
-                <input type="text" name="Company name" class="form-control" placeholder=" Contact Person"
-                 id="contactpersonInput">
-            </div>
+                <!-- <input type="text" name="contactPerson" class="form-control" placeholder=" Contact Person"
+                 id="contactpersonInput"  name="contactPerson" [(ngModel)]="form.contactPerson" #contactPerson="ngModel"
+                 [ngClass]="{ 'is-invalid': f.submitted && contactPerson.errors}">
+            </div> -->
 
                   
                   <div class="form-group" id="password">
@@ -51,6 +61,11 @@
                   <div class="text-center" id="buttonFor-register">
                       <input type="submit" class="btn btn-my" value="Register" id="registerButton">
                   </div>
+
+                  
+               <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+               Signup failed!<br />{{ errorMessage }}
+               </div>
                   
                   
                 </form>
