@@ -12,10 +12,10 @@
 <div class="col-md-7 col-lg-5 px-lg-2 col-xl-4 px-xl-0 px-xxl-3">
 <form
   method="POST"
-  class="w-100 rounded-1 p-4 border bg-white"
+  class="w-100 rounded-1 p-4 border"
   enctype="multipart/form-data"
 >
-  <label class="d-block mb-4">
+  <label class="d-block mb-3">
     <!-- <span class="form-label d-block">Full name</span> -->
     <input
       required
@@ -26,18 +26,18 @@
     />
   </label>
 
-    <label class="d-block mb-4">
+    <label class="d-block mb-3">
         <!-- <span class="form-label d-block">Email address</span> -->
         <input
           required
           name="Id"
           type="Id"
           class="form-control"
-          placeholder="Id"
+          placeholder="Id number"
         />
       </label>
 
-    <label class="d-block mb-4">
+    <label class="d-block mb-3">
     <!-- <span class="form-label d-block">Id:</span> -->
     <input
       required
@@ -48,7 +48,7 @@
     />
     </label>
 
-    <label class="d-block mb-4">
+    <label class="d-block mb-3">
     <!-- <span class="form-label d-block">Email address</span> -->
     <input
       required
@@ -58,7 +58,7 @@
       placeholder="Email address"
     />
     </label>
-    <label class="d-block mb-4">
+    <label class="d-block mb-3">
         <!-- <span class="form-label d-block">Email address</span> -->
         <input
           required
@@ -71,10 +71,10 @@
 
 
 
-    <label class="d-block mb-4">
+    <label class="d-block mb-3">
     <!-- <span class="form-label d-block">Years of experience</span> -->
     <select required name="experience" class="form-select">
-      <option>Years of experience</option>
+      <option >Years of experience</option>
       <option>1 - 2 years</option>
       <option>2 - 4 years</option>
   <option>7 - 10 years</option>
@@ -82,7 +82,7 @@
     </select>
   </label>
 
-  <label class="d-block mb-4">
+  <label class="d-block mb-3">
     <!-- <span class="form-label d-block">Tell us more about yourself</span> -->
     <textarea
       name="message"
@@ -92,7 +92,7 @@
     ></textarea>
   </label>
 
-  <label class="d-block mb-4">
+  <label class="d-block mb-3">
     <span class="form-label d-block">Upload Your Work</span>
     <input required name="cv" type="file" class="form-control" />
   </label>
@@ -128,10 +128,9 @@
   </div> -->
 
   <div class="mb-3">
-    <button type="submit" class="btn btn-primary px-3 rounded-3"> <a routerLink="/application-feedback">
+    <button type="submit" class="btn btn"> <a routerLink="/application-feedback">
       Submit Application
       </a>
-
     </button>
   </div>
 
