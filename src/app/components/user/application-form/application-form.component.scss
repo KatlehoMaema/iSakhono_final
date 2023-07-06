@@ -31,7 +31,8 @@ button {
     
 }
 span{
-    font-size: large; 
+    font-size: larger;
+    position: relative;
 }
 
 #form-select{
@@ -44,3 +45,33 @@ input{
     font-size: large;
     border-radius: 20px;
 }
+
+#upload{
+    
+    font-size: x-large;
+    
+}
+
+select{
+    font-size: large;
+    height:59px ;
+    width: 326px;
+    border-radius: 20px;
+      
+}
+
+// option:checked{
+//     background-color: white;
+//     color: black;
+
+
+.silver{
+    color: rgb(97, 97, 97);;
+}
+.one{
+    color: black;
+}
+// .control{
+//     width: 240px;
+//     height: 60px;
+// }
