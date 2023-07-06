@@ -20,4 +20,17 @@ export class CompanyProfileComponent {
     window.location.replace("")
   }
 
+  currentEmployer: any
+  constructor(private storage: CompanyStorageService) {}
+
+  ngOnInit(): void {
+    this.currentEmployer = this.storage.getEmployer()
+    
+  }
+  searchJobs(){
+    
+
+    window.location.replace("search-candindate")
+  }
+
 }
