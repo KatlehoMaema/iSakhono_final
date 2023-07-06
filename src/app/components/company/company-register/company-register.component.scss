@@ -43,7 +43,7 @@ span{
     justify-content: center;
     background-color: lightgrey;
     width: 400px;
-    height: 350px;
+    height: 400px;
     position: relative;
     top: 130px;
     
@@ -138,6 +138,23 @@ span{
     color: black;
 }
 
+#services{
+    margin: 15px; 
+}
+
+// #servicesInput{
+//     justify-content: center;
+//     align-items: center;
+//     display: flex;
+//     border-radius: 15px;
+//     border-color: white;
+//     width: 300px;
+//     height: 50px;
+//     font-weight: bold;
+//     font-size: 17px;
+//     color: black;
+// }
+
 #contactPerson{
     margin: 15px; 
 }
@@ -155,23 +172,23 @@ span{
     color: black;
 }
 
-#c_password{
+// #c_password{
     
-    margin: 15px; 
-}
+//     margin: 15px; 
+// }
 
-#c_passwordInput{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border-radius: 15px;
-    border-color: white;
-    width: 300px;
-    height: 50px;
-    font-weight: bold;
-    font-size: 17px;
-    color: black;
-}
+// #c_passwordInput{
+//     justify-content: center;
+//     align-items: center;
+//     display: flex;
+//     border-radius: 15px;
+//     border-color: white;
+//     width: 300px;
+//     height: 50px;
+//     font-weight: bold;
+//     font-size: 17px;
+//     color: black;
+// }
 
 #registerButton{
     background-color: indigo;

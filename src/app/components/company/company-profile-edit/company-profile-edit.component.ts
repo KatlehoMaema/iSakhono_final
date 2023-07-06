@@ -15,7 +15,7 @@ export class CompanyProfileEditComponent {
      contactPerson: "",
     phoneNumber: "",  
       emailAddress: "",
-      jobDesciption: ""
+      
 }
 
 user: any [] = []

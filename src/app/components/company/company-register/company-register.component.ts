@@ -13,6 +13,7 @@ export class CompanyRegisterComponent {
     company_email: null,
     industry: null,
     location: null,
+    services: null,
     // contactperson: null,
     password: null
   };
@@ -29,9 +30,9 @@ export class CompanyRegisterComponent {
     // this.company.currentUserData.subscribe((userData: any) => this.userData = userData)
   }
   register(){
-    const { companyname, company_email, industry, location,  password } = this.form;
+    const { companyname, company_email, industry, location, contact_person,  password } = this.form;
     console.log(this.form)
-    this.CompanyAuthService.registerCompany(companyname, company_email, industry, location,password).subscribe({
+    this.CompanyAuthService.registerCompany(companyname, company_email, industry, location, contact_person, password).subscribe({
       next: data => {
         console.log(data)
         console.log("Hello WOrld")
