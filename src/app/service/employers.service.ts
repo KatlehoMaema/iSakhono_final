@@ -5,8 +5,8 @@ import { BehaviorSubject } from 'rxjs';
 const company_api = "https://i-sakhono-backend.vercel.app/api/company/"
 
 @Injectable()
-export class CompanyService {
-  private companyDataSource = new BehaviorSubject({companyemail : '', password : ''});
+export class EmployerService {
+  private companyDataSource = new BehaviorSubject({companyname : '', password : ''});
   currentCompanyData = this.companyDataSource.asObservable();
   constructor(
     private http: HttpClient
