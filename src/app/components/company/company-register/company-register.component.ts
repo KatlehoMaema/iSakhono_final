@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CompanyAuthService } from 'src/app/service/company.auth.service';
 
 @Component({
@@ -13,7 +13,7 @@ export class CompanyRegisterComponent {
     company_email: null,
     industry: null,
     location: null,
-    contactperson: null,
+    // contactperson: null,
     password: null
   };
   isSuccessful = false;
@@ -29,9 +29,9 @@ export class CompanyRegisterComponent {
     // this.company.currentUserData.subscribe((userData: any) => this.userData = userData)
   }
   register(){
-    const { companyname, company_email, industry, location, password } = this.form;
+    const { companyname, company_email, industry, location,  password } = this.form;
     console.log(this.form)
-    this.CompanyAuthService.registerCompany(companyname,company_email,industry,location, password).subscribe({
+    this.CompanyAuthService.registerCompany(companyname, company_email, industry, location,password).subscribe({
       next: data => {
         console.log(data)
         console.log("Hello WOrld")
@@ -40,7 +40,7 @@ export class CompanyRegisterComponent {
           // this.authService.login(username,password).subscribe()
         }
         this.isSignUpFailed = false;
-        window.location.replace("sign-in") // last line
+        window.location.replace("company-profile") // last line
       },
       error: err => {
         

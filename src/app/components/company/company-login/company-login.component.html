@@ -18,17 +18,33 @@
   <div class="row">
       <div class="col offset-col-offset">
         <div class="card-auth">
-         
-            
-            
-            <form>
-              <div class="form-group" id="email">
-                <!-- <label for="email">Email : </label> -->
-                <input type="text" name="email" class="form-control" placeholder="Company Email"id="emailInput">
-              </div>
-              <div class="form-group" id="password">
-                <!-- <label for="password">Password : </label> -->
-                <input type="password" name="password" class="form-control" placeholder="Password"  id="passwordInput">
+
+              <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+                <div class="form-group" id="companyname">
+                  <!-- <label for="email">Email : </label> -->
+                  <input 
+                    type="text" name="companyname" 
+                    class="form-control" placeholder="Company Name"id="companynameInput"
+                    name="companyname"
+                    [(ngModel)]="form.companyname"
+                    required
+                    #companyname="ngModel"
+                    [ngClass]="{ 'is-invalid': f.submitted && companyname.errors }"
+                    >
+                </div>
+
+                <div class="form-group" id="password">
+                  <!-- <label for="password">Password : </label> -->
+                  <input 
+                    type="password" 
+                    name="password" class="form-control" 
+                    placeholder="Password"  id="passwordInput"
+                    [(ngModel)]="form.password"
+                    required
+                    minlength="6"
+                    #password="ngModel"
+                    [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
+                    >
                 <div class="text-right forget-pass">
                   <a routerLink="/forget-password" id="forgotPassword">Forget Password ?</a>
                 </div>
