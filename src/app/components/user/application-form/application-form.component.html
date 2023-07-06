@@ -73,18 +73,19 @@
 
     <label class="d-block mb-3">
     <!-- <span class="form-label d-block">Years of experience</span> -->
-    <select required name="experience" class="form-select">
-      <option >Years of experience</option>
-      <option>1 - 2 years</option>
-      <option>2 - 4 years</option>
-  <option>7 - 10 years</option>
-      <option>10+ years</option>
+    <select required name="experience" class="form-select"  onchange="this.className=this.options[this.selectedIndex].className"
+    class="silver">
+      <option class="silver">Years of experience</option>
+      <option class="one">1 - 2 years</option>
+      <option class="one">2 - 4 years</option>
+  <option class="one">7 - 10 years</option>
+      <option class="one">10+ years</option>
     </select>
   </label>
 
   <label class="d-block mb-3">
     <!-- <span class="form-label d-block">Tell us more about yourself</span> -->
-    <textarea
+    <textarea style="font-size: large;" 
       name="message"
       class="form-control"
       rows="3"
@@ -94,7 +95,7 @@
 
   <label class="d-block mb-3">
     <span class="form-label d-block">Upload Your Work</span>
-    <input required name="cv" type="file" class="form-control" />
+    <input required name="cv" type="file" id="upload" />
   </label>
 
   <!-- <div class="mb-4">
