@@ -35,11 +35,11 @@ Input {
     // margin: 10px;
     // padding: 25px;
     padding-right: 200px;
-    border-radius: 25px;
+    border-radius: 20px;
     height: 57px;
     text-align: left;
     background-color: lightgray;
-    width: 340px
+    width: 330px
 }
 
 button {
@@ -83,27 +83,30 @@ button {
     text-decoration: #01010f;
     align-items: left;
  }
- img.card-img-midle{
-    width: 250px;
-    height: 140px;
-    border-radius: 15px;
- }
+//  img.card-img-midle{
+//     width: 250px;
+//     height: 140px;
+//     border-radius: 15px;
+//  }
 
  .btn {
     margin-right: 35px;
     size: 10px;
     font-size: small;
     width: 108px;
-    margin-left: 35px;
-    margin-bottom: 10px;
-    align-items: center;
+    margin-left: 107px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    background-color: #010144;
+   //  height: 15px;
+    
     
  }
 
  #bar{
     
-    margin-left: -80%;
-    // height: 50px;
+    margin-left: -73%;
+    height: 50px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -114,10 +117,13 @@ button {
     align-items: center;
     justify-content: center;
     display: flex;
+    height: 55px;
+    margin-left: 10px;
  }
 
  #p{
     text-decoration: black;
+    font-size: large;
  }
  
  
