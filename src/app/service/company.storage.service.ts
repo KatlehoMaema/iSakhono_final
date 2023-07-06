@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 
 
-const EMPLOYER_KEY = 'auth-company';
-console.log(EMPLOYER_KEY)
+const COMPANY_KEY = 'auth-company';
+console.log(COMPANY_KEY)
 
 @Injectable({
   providedIn: 'root'
@@ -16,12 +16,12 @@ export class CompanyStorageService {
   }
 
   public saveEmployer(employer: any): void {
-    window.sessionStorage.removeItem(EMPLOYER_KEY);
-    window.sessionStorage.setItem(EMPLOYER_KEY, JSON.stringify(employer));
+    window.sessionStorage.removeItem(COMPANY_KEY);
+    window.sessionStorage.setItem(COMPANY_KEY, JSON.stringify(employer));
   }
 
   public getEmployer(): any {
-    const employer = window.sessionStorage.getItem(EMPLOYER_KEY);
+    const employer = window.sessionStorage.getItem(COMPANY_KEY);
     console.log(employer)
     if (employer) {
       return JSON.parse(employer);
@@ -31,7 +31,7 @@ export class CompanyStorageService {
   }
 
   public isLoggedIn(): boolean {
-    let employer = window.sessionStorage.getItem(EMPLOYER_KEY);
+    let employer = window.sessionStorage.getItem(COMPANY_KEY);
     // console.log(EMPLOYER_KEY)
     console.log(employer)
     if (employer) {
