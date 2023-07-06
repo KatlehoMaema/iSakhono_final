@@ -7,18 +7,6 @@ import { CompanyStorageService } from 'src/app/service/company.storage.service';
   styleUrls: ['./company-profile.component.scss']
 })
 export class CompanyProfileComponent {
-  currentEmployer: any
-  constructor(private storage: CompanyStorageService) {}
-
-  ngOnInit(): void {
-    this.currentEmployer = this.storage.getEmployer()
-    
-  }
-  searchJobs(){
-    
-
-    window.location.replace("")
-  }
 
   currentEmployer: any
   constructor(private storage: CompanyStorageService) {}
