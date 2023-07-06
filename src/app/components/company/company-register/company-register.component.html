@@ -1,75 +1,78 @@
 <div class="auth-avatar">
-    <img src="../../../../assets/images/sakhono.png" height="180px" alt="sakhono-logo" class="sakhono-logo">
+  <img src="../../../../assets/images/sakhono.png" height="180px" alt="sakhono-logo" class="sakhono-logo">
+</div>
+<div class="card-body auth-card">
+
+  <span style="margin-right: 30px;" class="navReg"> Register</span>
+  <span class="navLog"><a routerLink="/company-login">Login</a></span>
+</div>
+<form>
+  <div class="text-center login" id="existingAccount">
+    Already have an account? <a routerLink="/company-login" id="loginName"> Login </a> here.
   </div>
-  <div class="card-body auth-card">
-                
-    <span style="margin-right: 30px;" class="navReg">  Register</span>
-    <span class="navLog"><a routerLink="/company-login">Login</a></span>
-  </div>
-    <form>
-      <div class="text-center login" id="existingAccount">
-        Already have an account? <a routerLink="/company-login" id="loginName"> Login </a> here.
-      </div>
-  </form>
-  
-      <div class="row">
-        
-          <div class="col offsetcol offset">
-            <div class="card-auth">
-              
-                <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
+</form>
 
-                  <div class="form-group" id="fullname">
-                      <!-- <label for="name">Full Name :</label> -->
-                      <input type="text" name="Company name" class="form-control" placeholder=" Company Name"
-                       id="fullnameInput"  name="companyname" [(ngModel)]="form.companyname" #companyname="ngModel"
-                       [ngClass]="{ 'is-invalid': f.submitted && companyname.errors}">
-                  </div>
+<div class="row">
 
-                  <div class="form-group" id="email">
-                    <!-- <label for="email">Email :</label> -->
-                    <input type="text" name=" Email" class="form-control" placeholder=" Company Email" id="emailInput" name="email" [(ngModel)]="form.email" #email="ngModel"
-                    [ngClass]="{ 'is-invalid': f.submitted && email.errors}">
-                </div>
+  <div class="col offsetcol offset">
+    <div class="card-auth">
 
-                  <div class="form-group" id="industry">
-                    <!-- <label for="name">Full Name :</label> -->
-                    <input type="text" name=" industry" class="form-control" placeholder=" Industry"
-                     id="industryInput"  name="industry" [(ngModel)]="form.industry" #industry="ngModel"
-                     [ngClass]="{ 'is-invalid': f.submitted && industry.errors}">
-                </div>
+      <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
 
-                <div class="form-group" id="location">
-                  <!-- <label for="name">Full Name :</label> -->
-                  <input type="text" name=" location" class="form-control" placeholder=" Location"
-                   id="locationInput"  name="location" [(ngModel)]="form.location" #location="ngModel"
-                   [ngClass]="{ 'is-invalid': f.submitted && location.errors}">
-              </div>
+        <div class="form-group" id="fullname">
+          <!-- <label for="name">Full Name :</label> -->
+          <input type="text" name="Company name" class="form-control" placeholder=" Company Name" id="fullnameInput"
+            name="companyname" [(ngModel)]="form.companyname" #companyname="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && companyname.errors}">
+        </div>
 
-              <!-- <div class="form-group" id="contactPerson"> -->
-                <!-- <label for="name">Full Name :</label> -->
-                <!-- <input type="text" name="contactPerson" class="form-control" placeholder=" Contact Person"
+        <div class="form-group" id="email">
+          <!-- <label for="email">Email :</label> -->
+          <input type="text" name=" company_email" class="form-control" placeholder=" Company Email" id="emailInput"
+            name="company_email" [(ngModel)]="form.company_email" #company_email="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && company_email.errors}">
+        </div>
+
+        <div class="form-group" id="industry">
+          <!-- <label for="name">Full Name :</label> -->
+          <input type="text" name=" industry" class="form-control" placeholder=" Industry" id="industryInput"
+            name="industry" [(ngModel)]="form.industry" #industry="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && industry.errors}">
+        </div>
+
+        <div class="form-group" id="location">
+          <!-- <label for="name">Full Name :</label> -->
+          <input type="text" name=" location" class="form-control" placeholder=" Location" id="locationInput"
+            name="location" [(ngModel)]="form.location" #location="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && location.errors}">
+        </div>
+
+        <!-- <div class="form-group" id="contactPerson"> -->
+        <!-- <label for="name">Full Name :</label> -->
+        <!-- <input type="text" name="contactPerson" class="form-control" placeholder=" Contact Person"
                  id="contactpersonInput"  name="contactPerson" [(ngModel)]="form.contactPerson" #contactPerson="ngModel"
                  [ngClass]="{ 'is-invalid': f.submitted && contactPerson.errors}">
             </div> -->
 
-                  
-                  <div class="form-group" id="password">
-                      <!-- <label for="password">Password :</label> -->
-                      <input type="password" name="password" class="form-control" placeholder=" Password" id="passwordInput">
-                  </div>
-                  <div class="text-center" id="buttonFor-register">
-                      <input type="submit" class="btn btn-my" value="Register" id="registerButton">
-                  </div>
 
-                  
-               <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
-               Signup failed!<br />{{ errorMessage }}
-               </div>
-                  
-                  
-                </form>
-  
+        <div class="form-group" id="password">
+          <!-- <label for="password">Password :</label> -->
+          <input type="password" name="password" class="form-control" placeholder=" Password" id="passwordInput"
+            name="password" [(ngModel)]="form.password" required minlength="8" #password="ngModel"
+            [ngClass]="{ 'is-invalid': f.submitted && password.errors}">
+        </div>
+        <div class="text-center" id="buttonFor-register">
+          <input type="submit" class="btn btn-my" value="Register" id="registerButton">
+        </div>
+
+
+        <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+          Signup failed!<br />{{ errorMessage }}
+        </div>
+
+
+      </form>
+
+    </div>
   </div>
-          </div>
-      </div>
+</div>

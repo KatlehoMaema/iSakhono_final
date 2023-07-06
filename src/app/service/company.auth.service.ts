@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 // import { CompanyService } from './company.service';
 
 const auth_api = 'https://i-sakhono-backend.vercel.app/api/auth/'
-const employer_api = "https://i-sakhono-backend.vercel.app/api/employer/"
+const company_api = "https://i-sakhono-backend.vercel.app/api/company/"
 
 @Injectable({
   providedIn: 'root'
@@ -17,14 +17,14 @@ export class CompanyAuthService {
 
   
   registerCompany(companyname: string, company_email: string, industry: string, location: string, password: string){
-    return this.http.post(auth_api+"signup", {companyname, company_email, industry, location, password})
+    return this.http.post(company_api+"signup", {companyname, company_email, industry, location, password})
   }
 
-  login(companyemail: string, password: string): Observable<any>  {
+  login(companyname: string, password: string): Observable<any>  {
     return this.http.post(
-      employer_api + 'signin',
+      auth_api + 'signin',
       {
-        companyemail,
+        companyname,
         password,
       }
     );
@@ -35,7 +35,7 @@ export class CompanyAuthService {
   }
 
   updatecompanyprofile(data: any, id: any){
-    return this.http.put(employer_api+id, data)
+    return this.http.put(company_api+id, data)
   }
 }
 
