@@ -32,6 +32,10 @@ export class AuthService {
   logout(){
     sessionStorage.clear()
   }
+  getOneUser(id: any){
+    return this.http.get(user_api+id)
+
+  }
 
   updateUser(data: any, id: any){
     return this.http.put(user_api+id, data)

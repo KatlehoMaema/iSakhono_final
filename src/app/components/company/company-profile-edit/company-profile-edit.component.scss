@@ -21,7 +21,7 @@ input {
 .container{
     background-color: lightgrey;
     width: 350px;
-    height: 500px;
+    height: 420px;
     align-content: center;
     align-items: center;
     margin-left: 7%;
@@ -56,3 +56,28 @@ h2 {
 
 }
 
+#companyName{
+position: relative;
+top: 10px;
+}
+
+#industry{
+    position: relative;
+    top: 20px;
+}
+
+#location{
+    position: relative;
+    top: 30px;
+}
+
+#emailAddress{
+    position: relative;
+    top: 50px;
+}
+
+#contactPerson{
+    position: relative;
+    top: 40px;
+    
+}

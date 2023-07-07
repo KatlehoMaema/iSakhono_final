@@ -1,10 +1,27 @@
+form{
+background-color: lightgray;
+}
+
 body { 
     padding: 2rem 0;
     
 }
+h2{
+    font-weight: bold;
+    position: relative;
+    left: 30px;
+}
 
 button {
     background-color:#3A015C;
+    position: relative;
+    left: 40px;
+    top: 10px;
+    width: 240px;
+    height: 60px;
+    font-weight: bold;
+    font-size: large;
+    color: white;
 
 }
 
@@ -13,3 +30,48 @@ button {
     border-color: black;
     
 }
+span{
+    font-size: larger;
+    position: relative;
+}
+
+#form-select{
+    height: 59px;
+    font-size: large;
+    border-radius: 20px;
+}
+input{
+    height: 59px;
+    font-size: large;
+    border-radius: 20px;
+}
+
+#upload{
+    
+    font-size: x-large;
+    
+}
+
+select{
+    font-size: large;
+    height:59px ;
+    width: 326px;
+    border-radius: 20px;
+      
+}
+
+// option:checked{
+//     background-color: white;
+//     color: black;
+
+
+.silver{
+    color: rgb(97, 97, 97);;
+}
+.one{
+    color: black;
+}
+// .control{
+//     width: 240px;
+//     height: 60px;
+// }
