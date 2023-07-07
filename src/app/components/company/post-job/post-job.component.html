@@ -36,7 +36,12 @@
   
         <form class="container-3">
             <label><b>Skills & Experience required</b></label> <br>
-            <textarea class="first" id="" placeholder="Type in Experience"></textarea> <br>
+            <textarea 
+            class="first" 
+            #box 
+            placeholder="Type in Experience"></textarea> <br>
+            
+            <p></p>
 
             <!-- <div class="form-1">
               <label><b>Skills & Experience required</b></label> <br>
@@ -51,10 +56,17 @@
             <textarea class="third" id="" placeholder="Type in location"></textarea>
           </form>
     
+          
+
     </div>
     <div class="save-btn">
-      <button><a routerLink="/company-posting-job-feedback">
-        Post </a></button>
+      <button (click)="getValue(box.value)">
+        <!-- < routerLink="/company-posting-job-feedback"> -->
+        Post</button>
     </div>
     
     <app-company-bottom-navbar></app-company-bottom-navbar>
+
+
+
+    <!-- <p>{{displayVal}}</p> -->
