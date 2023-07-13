@@ -14,7 +14,7 @@ export class CompanyProfileComponent implements OnInit {
  
   constructor(
     private storage: CompanyStorageService,
-    // private EmployerService: EmployerService
+     
 
     ) {}
   ngOnInit(): void {
