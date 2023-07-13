@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { JobService } from 'src/app/service/job.service';
+import { PostjobAuthService } from 'src/app/service/postjob.auth.service';
+import { PostjobStorageService } from 'src/app/service/postjob.storage.service';
 
 @Component({
   selector: 'app-post-job',
@@ -6,21 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./post-job.component.scss']
 })
 export class PostJobComponent {
-  displayVal:string="";
-  exp: string = "";
 
-  getValue(val:string)
-  {
-    console.warn(val)
-    this.displayVal=val
-    this.relocatePage()
-
-  };
- 
-  relocatePage(): void {
-
-    window.location.replace('/search-job')
-  }
 }
 
 

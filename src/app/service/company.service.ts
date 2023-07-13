@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
-const company_api = "https://i-sakhono-backend.vercel.app/api/company/"
+const company_api = "https://i-sakhono-backend.vercel.app/api/employers/"
 
 @Injectable()
 export class CompanyService {
