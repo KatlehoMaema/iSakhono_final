@@ -5,17 +5,18 @@
     <h2>Company Profile</h2>
 </div>
     </div>
-    <!-- <div class="container-2">
+    <div class="container-2">
       <img src="../../../../assets/images/company-logo.jpg" 
       height="80px">
   
 
-    </div> -->
+    </div>
 
     <div class="content">
-      <h3> {{currentEmployer.Companyname}} </h3> 
-          <h5> {{currentEmployer.Industry}} </h5>
-          <h6><b> {{currentEmployer.company_email}} </b></h6>
+      <p> {{currentEmployer.CompanyName}} </p> 
+          <p> {{currentEmployer.industry}} </p>
+          <p> {{currentEmployer.location}} </p>
+          <p><b> {{currentEmployer.company_email}} </b></p>
       
       <!-- <p>{{currentUser.id}}</p> -->
     </div>
@@ -23,12 +24,12 @@
     <div class="wrapper">
   
 <ul class="Services">
-  <h2>Services</h2>
-  <h3>.{{currentEmployer.Services}}</h3> 
-  <h3>.</h3>
-  <h3>.</h3>
-  <h3>.</h3>
-  <h3></h3>
+  <h3>Services <b> <a routerLink="/profile-edit/"><img src="../../../../assets/images/pen-1319-svgrepo-com (1).svg" alt="" class="pen"></a></b></h3>
+  <h4>{{currentEmployer.Services}}</h4> 
+  <h4></h4>
+  <h4></h4>
+  <h4></h4>
+  <h4></h4>
 </ul>
     </div>
 
