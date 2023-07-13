@@ -12,7 +12,8 @@ export class SignupComponent implements OnInit {
   form: any = {
     username: null,
     email: null,
-    password: null
+    password: null,
+    c_password: null,
   };
   isSuccessful = false;
   isSignUpFailed = false;
@@ -38,7 +39,7 @@ export class SignupComponent implements OnInit {
           // this.authService.login(username,password).subscribe()
         }
         this.isSignUpFailed = false;
-        window.location.replace("sign-in") // last line
+        window.location.replace("user-profile") // last line
       },
       error: err => {
         

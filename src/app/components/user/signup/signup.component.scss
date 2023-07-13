@@ -44,7 +44,7 @@ span{
     justify-content: center;
     background-color: lightgrey;
     width: 400px;
-    height: 300px;
+    height: 355px;
     position: relative;
     top: 130px;
     
@@ -53,7 +53,7 @@ span{
 }
 
 #fullname{
-    margin: 15px; 
+    margin: 10px; 
 }
 
 #fullnameInput{
@@ -67,11 +67,12 @@ span{
     font-weight: bold;
     font-size: 17px;
     color: black;
-    
+    position: sticky;
+    right: 15px;
 }
 
 #email{
-    margin: 15px;
+    margin: 10px;
 }
 
 #emailInput{
@@ -85,11 +86,12 @@ span{
     font-weight: bold;
     font-size: 17px;
     color: black;
+    position: sticky;
 }
 
 #password{
     
-    margin: 15px; 
+    margin: 10px; 
 }
 
 #passwordInput{
@@ -103,11 +105,13 @@ span{
     font-weight: bold;
     font-size: 17px;
     color: black;
+    position: relative;
+    right: 15px;
 }
 
 #c_password{
     
-    margin: 15px; 
+    margin: 10px; 
 }
 
 #c_passwordInput{
@@ -120,8 +124,11 @@ span{
     height: 50px;
     font-weight: bold;
     font-size: 17px;
-    color: black
+    color: black;
+    position: relative;
+    right: 15px;
 }
+
 
 #registerButton{
     background-color: indigo;
@@ -132,7 +139,8 @@ span{
     width: 100px;
     font-weight: bolder;
     font-size: 20px;
-   
+    position: relative;
+    top: 20px;
       
 }
 
@@ -159,4 +167,26 @@ span{
 
 .left {
     margin-top: 2%;
+}
+
+.alert-danger-fullname{
+     color: red;
+     font-weight: bold;
+    //  font-style: italic;
+     font-size: large;
+     
+}
+
+.alert-danger-email{
+    color: red;
+    font-weight: bold;
+   //  font-style: italic;
+    font-size: large;
+}
+
+.alert-danger-password{
+    color: red;
+    font-weight: bold;
+   //  font-style: italic;
+    font-size: large;
 }

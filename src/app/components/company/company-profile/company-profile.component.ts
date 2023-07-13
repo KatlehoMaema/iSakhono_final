@@ -9,6 +9,7 @@ import { CompanyStorageService } from 'src/app/service/company.storage.service';
 })
 export class CompanyProfileComponent implements OnInit {
 
+
   currentEmployer: any
  
   constructor(
@@ -20,7 +21,7 @@ export class CompanyProfileComponent implements OnInit {
     this.currentEmployer = this.storage.getEmployer()
     
   }
-  searchCandidate(){
+  searchCandidates(){
     
 
     window.location.replace("search-candindate")

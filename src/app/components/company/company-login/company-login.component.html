@@ -29,7 +29,7 @@
                     name="companyname"
                     [(ngModel)]="form.companyname"
                     required
-                    #companyname="ngModel"
+                    #companyname="ngModel" required
                     [ngClass]="{ 'is-invalid': f.submitted && companyname.errors }"
                     >
                 </div>
@@ -42,8 +42,8 @@
                     placeholder="Password"  id="passwordInput"
                     [(ngModel)]="form.password"
                     required
-                    minlength="6"
-                    #password="ngModel"
+                    minlength="8"
+                    #password="ngModel" required
                     [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
                     >
                 <div class="text-right forget-pass">
