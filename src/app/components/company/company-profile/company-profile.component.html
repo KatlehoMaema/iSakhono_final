@@ -5,29 +5,35 @@
     <h2>Company Profile</h2>
 </div>
     </div>
-    <div class="container-2">
+    <!-- <div class="container-2">
       <img src="../../../../assets/images/company-logo.jpg" 
       height="80px">
   
-      <div class="bio">
-          <h3> {{currentEmployer.Companyname}} </h3> 
+
+    </div> -->
+
+    <div class="content">
+      <h3> {{currentEmployer.Companyname}} </h3> 
           <h5> {{currentEmployer.Industry}} </h5>
           <h6><b> {{currentEmployer.company_email}} </b></h6>
-      </div>
+      
+      <!-- <p>{{currentUser.id}}</p> -->
     </div>
 
-<div class="wrapper">
+    <div class="wrapper">
   
 <ul class="Services">
-  <h2><b>Services</b></h2> <br>
-  <h3></h3>
-  <h3></h3>
-  <h3></h3>
+  <h2>Services</h2>
+  <h3>.{{currentEmployer.Services}}</h3> 
+  <h3>.</h3>
+  <h3>.</h3>
+  <h3>.</h3>
   <h3></h3>
 </ul>
+    </div>
 
 
-</div>
+
 <!-- <div class="save-btn">
   <button>save</button>
 </div> -->

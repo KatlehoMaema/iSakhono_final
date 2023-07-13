@@ -39,6 +39,8 @@ export class CompanyLoginComponent {
     // this.user.changeData(data);
     const { companyname, password } = this.form
 
+    console.log(this.form)
+
     this.CompanyAuthService.login(companyname, password).subscribe({
       next: data => {
         console.log(data);
@@ -47,10 +49,10 @@ export class CompanyLoginComponent {
 
         this.isLoginFailed = false;
         this.isLoggedIn = true;
-        window.location.replace("company-profile-edit") // last line
+        window.location.replace("company-profile") // last line
       },
       error: err => {
-        console.error(err.message)
+        console.error(err.error)
         this.errorMessage = err.error.message;
         this.isLoginFailed = true;
       }
