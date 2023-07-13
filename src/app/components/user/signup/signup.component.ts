@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/service/auth.service';
+import { StorageService } from 'src/app/service/storage.service';
 // import { UserService } from "../../../service/user.service";
 
 @Component({
@@ -21,7 +22,8 @@ export class SignupComponent implements OnInit {
 
   constructor(
     // private user: UserService
-    private authService: AuthService
+    private authService: AuthService,
+    private storageService: StorageService
     ) { }
 
   ngOnInit() {

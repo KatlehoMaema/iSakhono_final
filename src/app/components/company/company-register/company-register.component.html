@@ -22,7 +22,7 @@
 
         <div class="form-group" id="fullname">
           <!-- <label for="name">Full Name :</label> -->
-          <input type="text" name="Company name" class="form-control" placeholder=" Company Name" id="fullnameInput"
+          <input type="text" name="companyname" class="form-control" placeholder=" Company Name" id="fullnameInput"
             name="companyname" [(ngModel)]="form.companyname" required #companyname="ngModel"
             [ngClass]="{ 'is-invalid': f.submitted && companyname.errors}">
         </div>
@@ -61,9 +61,9 @@
 
         <div class="form-group" id="contactPerson"> 
         <!-- <label for="name">Full Name :</label> -->
-         <input type="text" name="contactPerson" class="form-control" placeholder=" Contact Person"
-                 id="contactpersonInput"  name="contactPerson" [(ngModel)]="form.contactPerson" required #contactPerson="ngModel"
-                 [ngClass]="{ 'is-invalid': f.submitted && contactPerson.errors}">
+         <input type="text" name="contact_person" class="form-control" placeholder=" Contact Person"
+                 id="contactpersonInput"  name="contact_person" [(ngModel)]="form.contactp_erson" required #contact_person="ngModel"
+                 [ngClass]="{ 'is-invalid': f.submitted && contact_person.errors}">
             </div>
 
 
@@ -82,9 +82,12 @@
 
 
         <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
-          Signup failed!<br />{{ errorMessage }}
+          Failed To Register!<br />{{ errorMessage }}
         </div>
 
+        <div class="alert alert-success" *ngIf="f.submitted && isSuccessful">
+          Your have successful registered!
+        </div>
 
       </form>
 

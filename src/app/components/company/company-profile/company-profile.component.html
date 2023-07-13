@@ -13,10 +13,11 @@
     </div>
 
     <div class="content">
-      <p> {{currentEmployer.CompanyName}} </p> 
+      <p> {{currentEmployer.companyname}} </p> 
+      <p><b> {{currentEmployer.company_email}} </b></p>
           <p> {{currentEmployer.industry}} </p>
           <p> {{currentEmployer.location}} </p>
-          <p><b> {{currentEmployer.company_email}} </b></p>
+          
       
       <!-- <p>{{currentUser.id}}</p> -->
     </div>
@@ -24,12 +25,12 @@
     <div class="wrapper">
   
 <ul class="Services">
-  <h3>Services <b> <a routerLink="/profile-edit/"><img src="../../../../assets/images/pen-1319-svgrepo-com (1).svg" alt="" class="pen"></a></b></h3>
-  <h4>{{currentEmployer.Services}}</h4> 
-  <h4></h4>
-  <h4></h4>
-  <h4></h4>
-  <h4></h4>
+  <h3>Services <b> <a routerLink="/company-profile-edit/"><img src="../../../../assets/images/pen-1319-svgrepo-com (1).svg" alt="" class="pen"></a></b></h3>
+  <h4>{{currentEmployer.services}}</h4> 
+  <h4>{{currentEmployer.services}}</h4>
+  <h4>{{currentEmployer.services}}</h4>
+  <h4>{{currentEmployer.services}}</h4>
+  <h4>{{currentEmployer.services}}</h4>
 </ul>
     </div>
 
