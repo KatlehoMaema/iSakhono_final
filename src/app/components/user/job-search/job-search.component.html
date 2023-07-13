@@ -16,16 +16,24 @@
     <!-- <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button> -->
   </div>
   <div class="row">
-    <div class="col-6">
-      <div class="card">
+    <!-- <div class="col-6"> -->
+      <div class="card" *ngFor="let job of jobs">
         <div class="card-body">
-          <h5 class="card-title">Logo<img height="20px"
+          <div class="content">
+            
+            <h3>JOB: {{job.jobtitle}}</h3>
+            <h4> {{job.job_description}}</h4>
+            <h5>{{job.companyname}}</h5>
+            <p>{{job.location}}</p>
+            <!-- <p>{{currentUser.id}}</p> -->
+          </div>
+          <!-- <h5 class="card-title">Logo<img height="20px"
              width="20px">Company name</h5>
              <h6>Skills & experience:</h6>
              
              <h4 class="card-title">Responsibilities and Duties</h4>
             
-            <p class="card-text">Location</p>
+            <p class="card-text">Location</p> -->
             
           <!-- <img class="card-img-midle" src="../../../../assets/images/maintenance (1).jpg" alt="Card image cap" -->
             <!-- height="50px" width="50px"> -->
