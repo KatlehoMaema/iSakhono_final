@@ -36,6 +36,7 @@ export class CompanyStorageService {
     if (employer) {
       return true;
     }
+    
 
     return false;
   }

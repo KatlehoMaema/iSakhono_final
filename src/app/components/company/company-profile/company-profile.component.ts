@@ -13,7 +13,7 @@ export class CompanyProfileComponent implements OnInit {
   currentEmployer: any
  
   constructor(
-    private storage: CompanyStorageService
+    private storage: CompanyStorageService,
     // private EmployerService: EmployerService
 
     ) {}
@@ -30,7 +30,7 @@ export class CompanyProfileComponent implements OnInit {
   // getCompany(data: any, id: any){
   //   return this.http.get(company_api+id)
   // }
-  // getCompany() {
+  // getCompany(data: any, id: any) {
   //   this.EmployerService.getCompany().subscribe({
   //     next: data => {
   //       this.job = data

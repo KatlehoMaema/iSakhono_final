@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/service/auth.service';
 // import { UserService } from "../../../service/user.service";
+import { StorageService } from 'src/app/service/storage.service';
 
 @Component({
   selector: 'app-signup',
@@ -21,19 +22,26 @@ export class SignupComponent implements OnInit {
 
   constructor(
     // private user: UserService
-    private authService: AuthService
+    private authService: AuthService,
+    private storageService: StorageService
     ) { }
 
   ngOnInit() {
     // this.user.currentUserData.subscribe((userData: any) => this.userData = userData)
+    if (this.storageService.isSuccessful()) {
+      this.isSuccessful = true;
   }
+}
   register(){
     const { username, email, password } = this.form;
+    
     console.log(this.form)
     this.authService.registerUser(username,email,password).subscribe({
       next: data => {
         console.log(data)
-        console.log("Hello WOrld")
+
+        this.storageService.saveUser(data);
+      
         this.isSuccessful = true;
         if(this.isSuccessful){
           // this.authService.login(username,password).subscribe()
