@@ -52,7 +52,7 @@ export class CompanyLoginComponent {
         window.location.replace("company-profile") // last line
       },
       error: err => {
-        console.error(err.error)
+        console.error(err.message)
         this.errorMessage = err.error.message;
         this.isLoginFailed = true;
       }

@@ -30,9 +30,9 @@ export class CompanyRegisterComponent implements OnInit {
     // this.company.currentUserData.subscribe((userData: any) => this.userData = userData)
   }
   register(){
-    const { companyname, company_email, industry, location, contact_person,  password } = this.form;
+    const { companyname, company_email, industry, location, password } = this.form;
     console.log(this.form)
-    this.CompanyAuthService.registerCompany(companyname, company_email, industry, location, contact_person, password).subscribe({
+    this.CompanyAuthService.registerCompany(companyname, company_email, industry, location, password).subscribe({
       next: data => {
         console.log(data)
         console.log("Hello WOrld")
@@ -44,7 +44,7 @@ export class CompanyRegisterComponent implements OnInit {
         window.location.replace("company-profile") // last line
       },
       error: err => {
-        
+        console.error(err.message)
         this.errorMessage = err.error.message;
         this.isSignUpFailed = true;
       }

@@ -24,7 +24,7 @@ export class CompanyProfileComponent implements OnInit {
   searchCandidates(){
     
 
-    window.location.replace("search-candindate")
+    window.location.replace("search-candidate")
   }
 
   // getCompany(data: any, id: any){
