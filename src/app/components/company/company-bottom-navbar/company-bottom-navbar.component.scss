@@ -13,7 +13,7 @@
 
 .nav-item-2{
     position: relative;
-    left:8%;
+    right:10%;
     margin-top: -9px;
     width: 4px;
     height: 4px;
@@ -22,6 +22,13 @@
 .nav-item-3{
     position: relative;
     left: 25%;
+    margin-bottom: 20%;
+    margin-top: -2%;
+}
+
+.nav-item-4{
+    position: relative;
+    right: 10%;
     margin-bottom: 20%;
     margin-top: -2%;
 }
@@ -43,7 +50,7 @@
 #profile{
     margin-top: 30px;
     position: relative;
-    left: 8%;
+    right: 10%;
     color: white; 
 }
 
@@ -53,4 +60,12 @@
      left: 12%;
     color: white; 
     margin-bottom: 500px;
+}
+
+#posting{
+    margin-top: 30px;
+    position: relative;
+    left: 50%;
+    color: white; 
+    margin-bottom: 500px; 
 }
