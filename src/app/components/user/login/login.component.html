@@ -25,11 +25,11 @@
               <!-- <label for="email">Email : </label> -->
               <input 
                 type="text" name="email" 
-                class="form-control" placeholder="Email"id="emailInput"
+                class="form-control" placeholder="full name"id="emailInput"
                 name="username"
                 [(ngModel)]="form.username"
                 required
-                #username="ngModel"
+                #username="ngModel" required
                 [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
                 >
             </div>
@@ -41,8 +41,8 @@
                 placeholder="Password"  id="passwordInput"
                 [(ngModel)]="form.password"
                 required
-                minlength="6"
-                #password="ngModel"
+                minlength="8"
+                #password="ngModel" required
                 [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
                 >
               <div class="text-right forget-pass">

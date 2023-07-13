@@ -6,7 +6,7 @@ import { CompanyAuthService } from 'src/app/service/company.auth.service';
   templateUrl: './company-register.component.html',
   styleUrls: ['./company-register.component.scss']
 })
-export class CompanyRegisterComponent {
+export class CompanyRegisterComponent implements OnInit {
   
   form: any = {
     companyname: null,

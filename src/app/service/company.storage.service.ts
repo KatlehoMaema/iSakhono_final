@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 
 
-const COMPANY_KEY = 'auth-company';
-console.log(COMPANY_KEY)
+const COMPANY_KEY = 'auth-user';
 
 @Injectable({
   providedIn: 'root'
