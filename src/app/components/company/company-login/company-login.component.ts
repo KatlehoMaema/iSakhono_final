@@ -47,7 +47,7 @@ export class CompanyLoginComponent {
 
         this.isLoginFailed = false;
         this.isLoggedIn = true;
-        window.location.replace("company-profile-edit") // last line
+        window.location.replace("company-profile") // last line
       },
       error: err => {
         console.error(err.message)

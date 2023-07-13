@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CompanyStorageService } from 'src/app/service/company.storage.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { CompanyStorageService } from 'src/app/service/company.storage.service';
   templateUrl: './company-profile.component.html',
   styleUrls: ['./company-profile.component.scss']
 })
-export class CompanyProfileComponent {
+export class CompanyProfileComponent implements OnInit {
 
   currentEmployer: any
   constructor(private storage: CompanyStorageService) {}
@@ -15,7 +15,7 @@ export class CompanyProfileComponent {
     this.currentEmployer = this.storage.getEmployer()
     
   }
-  searchJobs(){
+  searchCandidates(){
     
 
     window.location.replace("search-candindate")

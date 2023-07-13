@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { application } from 'express';
 
 const auth_api = 'https://i-sakhono-backend.vercel.app/api/auth/'
 const user_api = "https://i-sakhono-backend.vercel.app/api/users/"
@@ -27,6 +28,22 @@ export class AuthService {
         password,
       }
     );
+  }
+
+  submitApplication(fullname: string, idNumber:string, contact:string, email:string, Address:string, experience:string, message:string, cv:string){
+    return this.http.post (
+      auth_api + 'application-feedback',
+      {
+        fullname, 
+        idNumber, 
+        contact, 
+        email, 
+        Address, 
+        experience, 
+        message, 
+        cv 
+      }
+    )
   }
 
   logout(){
