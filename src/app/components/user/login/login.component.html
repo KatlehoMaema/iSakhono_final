@@ -3,7 +3,7 @@
    <img src="../../../../assets/images/sakhono.png" height="180px" alt="sakhono-logo" class="sakhono-logo">
 </div>
 
-<div class="card-body auth-card">
+<div class="card-body auth-card d-flex justify-content-center">
   <span style="margin-right: 30px;" class="navReg"><a routerLink="/register-user">Register</a> </span>
   <span class="navLog"><a routerLink="/sign-in">Login</a></span>
 </div>
@@ -16,9 +16,9 @@
   Don`t have an account ? <a routerLink="/register-user" id=registerName>Register</a> here.
 </div>
 
-<div class="row">
-    <div class="col offset-col-offset">
-      <div class="card-auth">
+<div class="row d-flex justify-content-center ">
+    <div class="col offset-col-offset d-flex justify-content-center">
+      <div class="card-auth d-flex justify-content-center">
        
           <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
             <div class="form-group" id="email">
