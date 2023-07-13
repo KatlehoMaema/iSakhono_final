@@ -21,7 +21,7 @@ input {
 .container{
     background-color: lightgrey;
     width: 350px;
-    height: 420px;
+    height: 520px;
     align-content: center;
     align-items: center;
     margin-left: 7%;
@@ -80,4 +80,24 @@ top: 10px;
     position: relative;
     top: 40px;
     
+}
+
+#services{
+    position: relative;
+    top: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.placeholder{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+label{
+    height: 50px;
+    width: 300px;
 }
