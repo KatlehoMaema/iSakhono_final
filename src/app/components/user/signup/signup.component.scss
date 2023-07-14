@@ -1,3 +1,5 @@
+
+@media only screen and (min-width: 992px)  {
 .row {
     margin: 0;
     padding:0 ;
@@ -28,6 +30,7 @@ span{
 .navReg{
     font-weight: bolder;
     font-size: xx-large;
+    margin-left: 490px;
     
 }
 
@@ -47,6 +50,7 @@ span{
     height: 355px;
     position: relative;
     top: 130px;
+    margin-left: 460px;
     
     
     
@@ -194,4 +198,5 @@ span{
     font-weight: bold;
    //  font-style: italic;
     font-size: large;
+}
 }
