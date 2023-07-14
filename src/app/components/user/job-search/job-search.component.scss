@@ -16,7 +16,6 @@ h2 {
     position: relative;
     right: 90px;
     padding-bottom: 10px;
-    margin-left: 300px;
 
 }
 .search {
@@ -36,8 +35,8 @@ Input {
     // padding-right: 30px;
     // margin: 10px;
     // padding: 25px;
-    margin-right: 17px;
-    padding-right: 200px;
+    margin-left: 45px;
+    padding-right: 178px;
     border-radius: 15px;
     height: 57px;
     text-align: left;
@@ -53,6 +52,7 @@ button {
     padding-bottom: 1px;
     // margin-left: -200px;
     width: 60px;
+    margin-left: 20px;
     
 
 }
@@ -62,6 +62,7 @@ button {
     height: 25px;
     text-decoration: #01010f;
     font-size: 200;
+    // margin-left: 225px;
     font-weight: 400px,
     
  }
@@ -72,15 +73,16 @@ button {
  }
 .row {
     width: 400px !important;
+    // margin-right: 500px;
 }
  .card{
     width: 380px;
     height: 500px;
     background-color: lightgray;
     margin-top: 20px;
+    margin-left: 40px;
     // padding: 15px;
     margin: 10px;
-    padding-left: 20px;
     text-decoration: #01010f;
     align-items: right;
  }
@@ -95,12 +97,12 @@ button {
     size: 10px;
     font-size: small;
     width: 108px;
-    margin-left: 480px;
+    margin-left: 124px;
     margin-bottom: 20px;
     padding-left: 2px;
     background-color: #010144;
    //  height: 15px;
-    
+
     
  }
 
@@ -126,12 +128,13 @@ button {
  #p{
     text-decoration: black;
     font-size: large;
+
  }
 
 .card{
     align-items: center;
-    margin-left: 350px;
-    height: 250px;
+    margin-left: 22px;
+    height: 250px;align-items: flex-start;
 }
  
  

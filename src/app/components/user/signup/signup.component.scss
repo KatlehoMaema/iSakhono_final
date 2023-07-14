@@ -13,7 +13,7 @@
 
 }
 img{
-    background-color: white;
+    background-color: rgb(248, 245, 245);
 }
 
 span{
@@ -53,7 +53,8 @@ span{
 }
 
 #fullname{
-    margin: 10px; 
+    margin: 15px;
+
 }
 
 #fullnameInput{
@@ -68,11 +69,12 @@ span{
     font-size: 17px;
     color: black;
     position: sticky;
-    right: 15px;
+    left: 60px;
+    margin-left: 10px;
 }
 
 #email{
-    margin: 10px;
+    margin-left: 15px;
 }
 
 #emailInput{
@@ -87,11 +89,12 @@ span{
     font-size: 17px;
     color: black;
     position: sticky;
+    margin-left: 10px;
 }
 
 #password{
     
-    margin: 10px; 
+    margin: 15px; 
 }
 
 #passwordInput{
@@ -106,12 +109,13 @@ span{
     font-size: 17px;
     color: black;
     position: relative;
-    right: 15px;
+    right: 10px;
+    margin-left: 10px;
 }
 
 #c_password{
     
-    margin: 10px; 
+    margin: 15px; 
 }
 
 #c_passwordInput{
@@ -126,7 +130,8 @@ span{
     font-size: 17px;
     color: black;
     position: relative;
-    right: 15px;
+    right: 10px;
+    margin-left: 10px;
 }
 
 
@@ -134,7 +139,7 @@ span{
     background-color: indigo;
     border-radius: 10px;
     color: white;
-    margin: 35px;
+    margin-left: 35px;
     height: 50px;
     width: 100px;
     font-weight: bolder;

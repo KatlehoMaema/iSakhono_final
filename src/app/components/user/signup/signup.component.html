@@ -2,7 +2,7 @@
   <img onclick="window.history.go(-1)"  src="../../../../assets/images/left-arrow-backup-2-svgrepo-com (4).svg" alt="" class="left" srcset="" height="30px" width="30px"> 
   <img src="../../../../../assets/images/sakhono.png" height="180px" alt="sakhono-logo" class="sakhono-logo">
 </div>
-<div class="card-body auth-card d-flex justify-content-center">
+<div class="card-body">
 
   <span style="margin-right: 30px;" class="navReg"> Register</span>
   <span class="navLog"><a routerLink="/sign-in">Login</a></span>
@@ -13,10 +13,10 @@
   </div>
 </form>
 
-<div class="row d-flex justify-content-center">
+<div class="row">
 
-  <div class="col offsetcol offset d-flex justify-content-center ">
-    <div class="card-auth d-flex justify-content-center">
+  <div class="col offsetcol offset">
+    <div class="card-auth">
 
       <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
         <div class="form-group" id="fullname">
