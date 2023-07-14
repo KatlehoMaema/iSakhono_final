@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 
 const COMPANY_KEY = 'auth-user';
+const COMPANY_TOKEN = 'token'
 
 @Injectable({
   providedIn: 'root'
@@ -21,21 +22,22 @@ export class CompanyStorageService {
 
   public getEmployer(): any {
     const employer = window.sessionStorage.getItem(COMPANY_KEY);
-    console.log(employer)
+    // console.log(employer)
     if (employer) {
       return JSON.parse(employer);
     }
-    console.log(employer)
+    // console.log(employer)
     return {};
   }
 
   public isLoggedIn(): boolean {
-    let employer = window.sessionStorage.getItem(COMPANY_KEY);
+    const employer = window.sessionStorage.getItem(COMPANY_KEY);
     // console.log(EMPLOYER_KEY)
     console.log(employer)
     if (employer) {
       return true;
     }
+    
 
     return false;
   }

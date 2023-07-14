@@ -9,7 +9,8 @@ body {
 h2{
     font-weight: bold;
     position: relative;
-    left: 30px;
+    left: 55px;
+    bottom:20px;
 }
 
 button {
@@ -76,3 +77,12 @@ select{
 //     width: 240px;
 //     height: 60px;
 // }
+
+.left {
+    // position: relative;
+    padding-top: 20px;
+    margin-right: 75%;
+    position: relative;
+    top: 10px;
+
+}
