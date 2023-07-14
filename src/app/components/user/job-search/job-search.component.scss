@@ -1,3 +1,8 @@
+@media only screen and (min-width: 50px) {
+
+// @media screen {
+   
+
 h2 {
    
     text-align: center;
@@ -22,6 +27,8 @@ h2 {
     display: flex;
     padding-right: 15px;
     width: 100%;
+    position: relative;
+    bottom: 30px;
 }
 
 .title {
@@ -69,12 +76,13 @@ button {
  }
 .row {
     width: 400px !important;
+    
 }
  .card{
-    width: 380px;
-    height: 150px;
+    width: 800px;
+    height: 295px;
     background-color: lightgray;
-    margin-top: 20px;
+    margin-top: 60px;
     // padding: 15px;
     margin: 10px;
     padding-left: 20px;
@@ -82,6 +90,8 @@ button {
     // margin-top: 10px;
     text-decoration: #01010f;
     align-items: left;
+    position: relative;
+    bottom: 30px;
  }
 //  img.card-img-midle{
 //     width: 250px;
@@ -95,7 +105,7 @@ button {
     font-size: small;
     width: 108px;
     margin-left: 107px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding-left: 25px;
     background-color: #010144;
    //  height: 15px;
@@ -125,6 +135,16 @@ button {
     text-decoration: black;
     font-size: large;
  }
+
+ .card-text {
+
+    height: 100px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+}
  
  
  

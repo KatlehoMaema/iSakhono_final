@@ -30,7 +30,7 @@ export class JobSearchComponent implements OnInit {
         console.log(this.jobs)
       },
       error: e => {
-        console.error(e.message)
+        console.error(e.error.message)
       }
     })
   }
