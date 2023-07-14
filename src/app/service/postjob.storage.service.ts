@@ -13,7 +13,7 @@ export class PostjobStorageService {
   clean(): void {
     window.sessionStorage.clear();
   }
-
+ 
   public saveJob(job: any): void {
     window.sessionStorage.removeItem(POSTJOB_KEY);
     window.sessionStorage.setItem(POSTJOB_KEY, JSON.stringify(job));

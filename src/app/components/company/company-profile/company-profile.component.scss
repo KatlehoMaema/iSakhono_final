@@ -39,9 +39,10 @@ img{
     }
 
 .container-2{
-    display: flex;
+    // display: flex;
     margin-top: 20px;
     margin-left: 20px;
+    // margin-left: 5%;
 
 }
 
@@ -112,7 +113,15 @@ margin-left: 10px;
 .pen {
     position: relative;
     left: 330px;
-    height:30px ;
+    height: 30px;
     width: 30px;
-    
+
+}
+
+#companyProfile{
+    border-radius: 30px;
+    float: left;
+    // margin-top: -280px;
+    margin-left: 25%;
+    padding-bottom: 2px;
 }

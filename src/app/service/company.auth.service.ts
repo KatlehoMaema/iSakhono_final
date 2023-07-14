@@ -16,8 +16,8 @@ export class CompanyAuthService {
   ) { }
 
   
-  registerCompany(companyname: string, company_email: string, industry: string, location: string, contact_person:string , password: string){
-    return this.http.post(company_api+"signup", {companyname, company_email, industry, location, contact_person,  password})
+  registerCompany(companyname: string, company_email: string, industry: string, location: string, password: string){
+    return this.http.post(company_api+"signup", {companyname, company_email, industry, location,   password})
   }
 
   login(companyname: string, password: string): Observable<any>  {

@@ -9,12 +9,12 @@ export class CompanyProfileEditComponent {
   
   userDetails = {
 
-    companyName: "",
+    companyname: "",
     industry: "",
     location: "",
-     contactPerson: "",
+     contactperson: "",
     phoneNumber: "",  
-      emailAddress: "",
+      company_email: "",
       
 }
 

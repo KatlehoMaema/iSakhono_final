@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PostjobStorageService } from 'src/app/service/postjob.storage.service';
+// import { PostjobStorageService } from 'src/app/service/postjob.storage.service';
 import { JobService } from 'src/app/service/job.service';
 
 

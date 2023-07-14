@@ -13,8 +13,8 @@ export class CompanyProfileComponent implements OnInit {
   currentEmployer: any
  
   constructor(
-    private storage: CompanyStorageService
-    // private EmployerService: EmployerService
+    private storage: CompanyStorageService,
+     
 
     ) {}
   ngOnInit(): void {
@@ -24,13 +24,13 @@ export class CompanyProfileComponent implements OnInit {
   searchCandidates(){
     
 
-    window.location.replace("search-candindate")
+    window.location.replace("search-candidate")
   }
 
   // getCompany(data: any, id: any){
   //   return this.http.get(company_api+id)
   // }
-  // getCompany() {
+  // getCompany(data: any, id: any) {
   //   this.EmployerService.getCompany().subscribe({
   //     next: data => {
   //       this.job = data
