@@ -148,7 +148,7 @@ button {
   // }
 
 
-  input {
+  textarea {
 
     width: 359px;
     height: 100px;
@@ -158,6 +158,8 @@ button {
   
   label {
     margin-top: 20px;
+    font-weight: bolder;
+    font-size: larger;
   }
 
   form {

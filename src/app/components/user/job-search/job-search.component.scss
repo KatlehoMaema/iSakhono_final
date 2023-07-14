@@ -1,4 +1,7 @@
-@media only screen and (min-width: 992px)  {
+@media only screen and (min-width: 50px) {
+
+// @media screen {
+   
 
 h2 {
    
@@ -11,7 +14,7 @@ h2 {
     padding-bottom: 15px;
     width: 100%;
     font-size: x-large;
-    font-stretch: wider;
+   //  font-stretch: wider;
     
 }
 .left {
@@ -24,6 +27,8 @@ h2 {
     display: flex;
     padding-right: 15px;
     width: 100%;
+    position: relative;
+    bottom: 30px;
 }
 
 .title {
@@ -37,9 +42,8 @@ Input {
     // padding-right: 30px;
     // margin: 10px;
     // padding: 25px;
-    margin-left: 45px;
-    padding-right: 178px;
-    border-radius: 15px;
+    padding-right: 200px;
+    border-radius: 20px;
     height: 57px;
     text-align: left;
     background-color: lightgray;
@@ -55,18 +59,17 @@ button {
     // margin-left: -200px;
     width: 60px;
     margin-left: 20px;
+    width: 85px;
     
 
 }
 
  h5 {
-    background-color: lightgrey;
-    height: 25px;
-    text-decoration: #01010f;
-    font-size: 200;
-    // margin-left: 225px;
-    font-weight: 400px,
     
+    height: 25px;
+    color: black;
+    font-size: 200;
+    font-weight: 400;
  }
 
  h6{
@@ -75,71 +78,67 @@ button {
  }
 .row {
     width: 400px !important;
-    // margin-right: 500px;
 }
  .card{
     width: 380px;
     height: 150px;
     background-color: lightgray;
     margin-top: 20px;
-    margin-left: 40px;
-    
     // padding: 15px;
     margin: 10px;
+    padding-left: 20px;
+    // margin-right: 10px;
+    // margin-top: 10px;
     text-decoration: #01010f;
-    align-items: right;
+    align-items: left;
  }
 //  img.card-img-midle{
 //     width: 250px;
 //     height: 140px;
 //     border-radius: 15px;
 //  }
+ img.card-img-midle{
+    width: 250px;
+    height: 140px;
+    border-radius: 15px;
+ }
 
  .btn {
     margin-right: 35px;
     size: 10px;
     font-size: small;
     width: 108px;
-    margin-left: 124px;
+    margin-left: 107px;
     margin-bottom: 20px;
-    padding-left: 2px;
+    padding-left: 25px;
     background-color: #010144;
    //  height: 15px;
-
+    
     
  }
 
- #bar{
+//  #bar{
     
-    margin-left: -73%;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+//     margin-left: -73%;
+//     height: 50px;
+//     align-items: center;
+//     justify-content: center;
+//     display: flex;
     
- }
+//  }
 
  .click{
     align-items: center;
     justify-content: center;
     display: flex;
     height: 55px;
-    width: 40px;
-    margin-right: 30px;
+    margin-left: 10px;
  }
 
  #p{
     text-decoration: black;
     font-size: large;
-
  }
-
-.card{
-    align-items: center;
-    margin-left: 22px;
-    height: 250px;align-items: flex-start;
-}
-}
  
  
  

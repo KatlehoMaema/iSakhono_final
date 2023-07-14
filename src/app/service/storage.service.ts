@@ -40,14 +40,14 @@ export class StorageService {
     return false;
   }
 
-  public isSuccessful(): boolean {
-    let employer = window.sessionStorage.getItem(USER_KEY);
-    // console.log(EMPLOYER_KEY)
-    console.log(employer)
-    if (employer) {
-      return true;
-    }
+//   public isSuccessful(): boolean {
+//     let employer = window.sessionStorage.getItem(USER_KEY);
+//     // console.log(EMPLOYER_KEY)
+//   //   console.log(employer)
+//   //   if (user) {
+//   //     return true;
+//   //   }
 
-  return false;
-}
+//   // return false;
+// }
 }
