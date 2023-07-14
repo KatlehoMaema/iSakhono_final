@@ -34,7 +34,11 @@ export class JobSearchComponent implements OnInit {
       }
     })
   }
-  
+  isReadMore = true;
+
+  showText() {
+     this.isReadMore = !this.isReadMore
+  }
 
 }
 

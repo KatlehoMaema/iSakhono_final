@@ -28,10 +28,10 @@ export class SignupComponent implements OnInit {
     ) { }
 
   ngOnInit() {
-    // this.user.currentUserData.subscribe((userData: any) => this.userData = userData)
-    if (this.storageService.isSuccessful()) {
-      this.isSuccessful = true;
-  }
+    //  this.user.currentUserData.subscribe((userData: any) => this.userData = userData)
+  //   if (this.storageService.isSuccessful()) {
+  //     this.isSuccessful = true;
+  // }
 }
   register(){
     const { username, email, password } = this.form;
