@@ -19,6 +19,7 @@ export class CompanyProfileComponent implements OnInit {
     ) {}
   ngOnInit(): void {
     this.currentEmployer = this.storage.getEmployer()
+    console.log(this.currentEmployer);
     
   }
   searchCandidates(){

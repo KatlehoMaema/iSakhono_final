@@ -35,6 +35,8 @@ export class LoginComponent  {
     var msg = event.target.value;
     // this.user.changeData(msg);
   }
+
+  
   login() {
     // this.user.changeData(data);
     const { username, password } = this.form
