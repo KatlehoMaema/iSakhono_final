@@ -1,6 +1,3 @@
-@media only screen and (min-width: 929px) {
-    
-
 
 .row{
     margin: 0;
@@ -143,10 +140,11 @@ h3{
 }
 
 
-}
+
 
 //FOR DESKTOP
-
+@media only screen and (min-width: 929px) {
+    
 
 .row{
     margin: 0;
@@ -194,7 +192,7 @@ span{
     height: 300px;
     position: relative;
     top: 130px;
-    left: 485px;
+    
     
 }
 

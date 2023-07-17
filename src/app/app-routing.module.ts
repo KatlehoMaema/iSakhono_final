@@ -65,7 +65,7 @@ const routes: Routes = [
     path: "application-feedback", component: ApplicationFeedbackComponent
   },
   {
-    path: "company-posting-job-feedback", component: CompanyPostingJobFeedbackComponent
+    path: "post-feedback", component: CompanyPostingJobFeedbackComponent
   },
   {
     path: "job-post", component: PostJobComponent

@@ -1,9 +1,9 @@
-@media only screen and (min-width: 992px)  {
+
 
 input {
     // display: inline-block;
     padding: 1rem;
-    margin: 7px;
+    margin: 10px;
     box-sizing: border-box;
     border-radius: 30px;
     padding-left: 70px;
@@ -18,7 +18,7 @@ input {
     height: 50px;
     background-color: #3A015C;
     border: #3A015C;
-    margin-left: 135px
+    // margin-left: 135px
     
 }
  
@@ -35,31 +35,33 @@ input {
 
 // }
 
-.container-2 {
+
+
+#text{
     background-color: #010144;
-    height: 81px;
-    margin-top: 30px;
-}
-
-
-h2 {
-    // display: flex;
-    align-items: center;
     color: white;
     justify-items: center;
-    margin-left: 40%;
-    padding-bottom: -10%;
-    padding-top: 20px;
+    margin-left: 22%;
+    padding-top: 5%;
     // margin: 50px;
     padding-left: 2%;
     // font-weight: bold;
 }
-.left {
-    position: relative;
-    right: 60px;
-    padding-bottom: 10px;
 
-}
+
+
+    h2{
+        // position: relative;
+        margin-top: -30px;
+        right: 30px;
+    }
+
+    .left {
+        // position: relative;
+        padding-top: 20px;
+        margin-right: 75%;
+    
+    }
 
 #companyName{
 position: relative;
@@ -71,9 +73,9 @@ top: 10px;
     top: 20px;
 }
 
-.bg-light {
-    --bs-bg-opacity: 0;
-        background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;}
+// .bg-light {
+//     --bs-bg-opacity: 0;
+//         background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;}
 
 #location{
 
@@ -110,5 +112,4 @@ top: 10px;
 label{
     height: 50px;
     width: 300px;
-}
 }
