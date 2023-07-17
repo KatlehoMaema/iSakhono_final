@@ -1,31 +1,41 @@
 <div class="container">
 
     <div id="text">
-      <img onclick="window.history.go(-1)" src="../../../../assets/images/left-arrow-backup-2-svgrepo-com (3).svg" alt="" class="left" srcset="" height="50px" width="50px"> 
+      <img onclick="window.history.go(-1)" 
+        src="../../../../assets/images/left-arrow-backup-2-svgrepo-com (3).svg" 
+        alt="" class="left" srcset="" height="50px" width="50px"> 
     <h2>Company Profile</h2>
 </div>
     </div>
-    <div class="container-2" id="companyProfile">
-      <img src="../../../../assets/images/compan.jpg" 
-      height="200px">
+    <div class="container profile">
+      <div class="container-2" id="companyProfile">
+        <img src="../../../../assets/images/compan.jpg" 
+        height="200px">
+    
   
-
+      </div>
+      <div class="content">
+        <p> {{currentEmployer.companyname}}  </p> 
+        <p> {{currentEmployer.company_email}} </p>   
+        
+        <!-- <p>{{currentUser.id}}</p> -->
+      </div>
     </div>
+    <hr>
+    <div class="jobs">
+      <div class="intro">
+        <h3>Job Posted</h3>
+      </div>
+      <div class="content">
 
-    <div class="content">
-      <p> {{currentEmployer.companyname}} </p> 
-      <p> {{currentEmployer.company_email}} </p>
-          <p> {{currentEmployer.industry}} </p>
-          <p> {{currentEmployer.location}} </p>
-          
-      
-      <!-- <p>{{currentUser.id}}</p> -->
+      </div>
     </div>
 
   <div class="wrapper">
+
    
 <ul class="Services">
-  <h3>Services <b> <a routerLink="/company-profile-edit/"><img src="../../../../assets/images/pen-1319-svgrepo-com (1).svg" alt="" class="pen"></a></b></h3>
+  <!-- <h3>Services <b> <a routerLink="/company-profile-edit/"><img src="../../../../assets/images/pen-1319-svgrepo-com (1).svg" alt="" class="pen"></a></b></h3> -->
   <h4>{{currentEmployer.services}}</h4> 
   <h4>{{currentEmployer.services}}</h4>
   <h4>{{currentEmployer.services}}</h4>

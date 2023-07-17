@@ -41,7 +41,7 @@ export class CompanyRegisterComponent implements OnInit {
           // this.authService.login(username,password).subscribe()
         }
         this.isSignUpFailed = false;
-        window.location.replace("company-profile") // last line
+        window.location.replace("company-login") // last line
       },
       error: err => {
         console.error(err.message)

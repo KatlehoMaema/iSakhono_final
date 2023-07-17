@@ -46,9 +46,8 @@ export class PostJobComponent implements OnInit {
     if(this.form) {console.log("Not it")} 
     this.jobService.createJob(this.form).subscribe({
       next: form => {
-        console.log(this.form);
-        console.log("Hello World")
-        this.PostjobStorageService.saveJob(form);
+        console.log(form);
+        
         this.isPosted = true;
         this.isNotPosted = false;
         window.location.replace("search-job") // last line

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 
-const COMPANY_KEY = 'auth-user';
+const COMPANY_KEY = 'auth-company';
 const COMPANY_TOKEN = 'token'
 
 @Injectable({

@@ -1,3 +1,8 @@
+@media only screen and (min-width: 50px) {
+
+// @media screen {
+   
+
 h2 {
    
     text-align: center;
@@ -9,7 +14,7 @@ h2 {
     padding-bottom: 15px;
     width: 100%;
     font-size: x-large;
-    font-stretch: wider;
+   //  font-stretch: wider;
     
 }
 .left {
@@ -22,10 +27,13 @@ h2 {
     display: flex;
     padding-right: 15px;
     width: 100%;
+    position: relative;
+    bottom: 30px;
 }
 
 .title {
     background-color: #010144;
+    
     
 }
 
@@ -44,11 +52,12 @@ Input {
 
 button {
     // padding: 15px;
-    // margin: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: lightgrey;
-    padding-left: 15px;
-    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-bottom: 1px;
+    // margin-left: -200px;
+    width: 60px;
     margin-left: 20px;
     width: 85px;
     
@@ -56,9 +65,9 @@ button {
 }
 
  h5 {
-    background-color: lightgrey;
+    
     height: 25px;
-    text-decoration: #01010f;
+    color: black;
     font-size: 200;
     font-weight: 400;
  }
@@ -88,6 +97,11 @@ button {
 //     height: 140px;
 //     border-radius: 15px;
 //  }
+ img.card-img-midle{
+    width: 250px;
+    height: 140px;
+    border-radius: 15px;
+ }
 
  .btn {
     margin-right: 35px;
@@ -103,15 +117,15 @@ button {
     
  }
 
- #bar{
+//  #bar{
     
-    margin-left: -73%;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+//     margin-left: -73%;
+//     height: 50px;
+//     align-items: center;
+//     justify-content: center;
+//     display: flex;
     
- }
+//  }
 
  .click{
     align-items: center;

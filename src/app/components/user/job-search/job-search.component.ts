@@ -31,23 +31,15 @@ export class JobSearchComponent implements OnInit {
         console.log(this.jobs)
       },
       error: e => {
-        console.error(e.message)
+        console.error(e.error.message)
       }
     })
   }
-  
-    // ngOnInit(): void {
-    //   this.currentUser = this.storage.getUser()
+  isReadMore = true;
 
-  // displayVal:string="";
-  // getValue(val:string)
-  // {
-  //   console.warn(val)
-  //   this.displayVal=val
-
-  // };
-  
-
+  showText() {
+     this.isReadMore = !this.isReadMore
+  }
 
 }
 

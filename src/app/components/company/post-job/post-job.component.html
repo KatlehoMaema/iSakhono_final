@@ -14,35 +14,56 @@
 <div class="bio">
   <form name="form" (ngSubmit)="f.form.valid && post()" #f="ngForm" novalidate>
     <div class="form-group" id="jobtitle">
-      <label>Jobtitle</label>
-      <input type="text" name="jobtitle" class="form-control" placeholder="Type in jobtitle" id="jobtitle"
+      <label>Job Title :</label>
+      <textarea style="font-size: large;" required
+      name="message"
+      class="form-control"
+      rows="3"
+      placeholder="Job Title" id="jobtitle"
         name="jobtitle" [(ngModel)]="form.jobtitle" required #jobtitle="ngModel"
         [ngClass]="{ 'is-invalid': f.submitted && jobtitle.errors }">
+      </textarea>
     </div>
     <div class="form-group" id="location">
-      <label>location</label>
-      <input type="text" name="location" class="form-control" placeholder="Type in location" d="locationInput"
+      <label>Location :</label>
+      <textarea style="font-size: large;" required
+                                  name="message"
+                                  class="form-control"
+                                  rows="3"
+                                  placeholder="Location" id="locationInput"
         name="location" [(ngModel)]="form.location" required #location="ngModel"
         [ngClass]="{ 'is-invalid': f.submitted && location.errors }">
+      </textarea>
     </div>
     <div class="form-group" id="work_type">
-      <label>Work type</label>
-      <input type="text" name="work_type" class="form-control" placeholder="Type in work_type" id="work_typeInput"
-        name="work_type" [(ngModel)]="form.work_type" required #work_type="ngModel"
+      <label>Work Type :</label>
+      <textarea style="font-size: large;" required
+      name="message"
+      class="form-control"
+      rows="3"
+      placeholder="Work Type"
+        id="worktypeInput" name="work_type" [(ngModel)]="form.work_type" required #work_type="ngModel"
         [ngClass]="{ 'is-invalid': f.submitted && work_type.errors }">
+      </textarea>
     </div>
 
     <div class="form-group" id="job_description">
-      <label>Job description</label>
-      <input type="text" name="job_description" class="form-control" placeholder="Type in job_description"
+      <label>Job Description :</label>
+      <textarea style="font-size: large;" required
+                                  name="message"
+                                  class="form-control"
+                                  rows="3"
+                                  placeholder="Job description"
+                                
         id="job_descriptionInput" name="job_description" [(ngModel)]="form.job_description" required
         #job_description="ngModel" [ngClass]="{ 'is-invalid': f.submitted && job_description.errors }">
+        </textarea>
     </div>
 
     <div class="save-btn">
       <!-- <button onclick="post()" ><a routerLink="/company-posting-job-feedback">
             Post </a></button> -->
-    
+            <span class="alert alert-danger">{{errorMessage}}</span>
       <button class="button" type="submit" (click)="post()">post</button>
     
     
