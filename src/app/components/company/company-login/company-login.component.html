@@ -3,7 +3,7 @@
   <img src="../../../../assets/images/sakhono.png" height="180px" alt="sakhono-logo" class="sakhono-logo">
   </div>
   
-  <div class="card-body auth-card">
+  <div class="card-body auth-card d-flex justify-content-center">
     <span style="margin-right: 30px;" class="navReg"><a routerLink="/company-register">Register</a> </span>
     <span class="navLog"><a routerLink="/company-login">Login</a></span>
   </div>
@@ -17,7 +17,7 @@
   </div>
   
   <div class="row">
-      <div class="col offset-col-offset">
+      <div class="col offset-col-offset d-flex justify-content-center">
         <div class="card-auth">
 
               <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
@@ -47,7 +47,7 @@
                     [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
                     >
                 <div class="text-right forget-pass">
-                  <a routerLink="/forget-password" id="forgotPassword">Forget Password ?</a>
+                  <a routerLink="/forget-password" id="forgotPassword">Forgot Password ?</a>
                 </div>
               </div>
               <div class="text-center" id="buttonForsignin">
