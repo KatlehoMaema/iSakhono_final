@@ -22,6 +22,7 @@ import { ApplicationFormComponent } from './components/user/application-form/app
 import { CompanyPostingJobFeedbackComponent } from './components/company/company-posting-job-feedback/company-posting-job-feedback.component';
 import { ApplicationFeedbackComponent } from './components/user/application-feedback/application-feedback.component';
 import { PostJobComponent } from './components/company/post-job/post-job.component';
+import { JobEditComponent } from './components/company/job-edit/job-edit.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { PostJobComponent } from './components/company/post-job/post-job.compone
     PostJobComponent,
     ApplicationFeedbackComponent,
     CompanyPostingJobFeedbackComponent,
-    ApplicationFormComponent
+    ApplicationFormComponent,
+    JobEditComponent
   ],
   imports: [
     BrowserModule,

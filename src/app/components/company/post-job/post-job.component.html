@@ -15,36 +15,36 @@
   <form name="form" (ngSubmit)="f.form.valid && post()" #f="ngForm" novalidate>
     <div class="form-group" id="jobtitle">
       <label>Job Title :</label>
-      <textarea style="font-size: large;" required
+      <input style="font-size: large;" required
       name="message"
       class="form-control"
       rows="3"
       placeholder="Job Title" id="jobtitle"
         name="jobtitle" [(ngModel)]="form.jobtitle" required #jobtitle="ngModel"
-        [ngClass]="{ 'is-invalid': f.submitted && jobtitle.errors }">
-      </textarea>
+        [ngClass]="{ 'is-invalid': f.submitted && jobtitle.errors }"/>
+      
     </div>
     <div class="form-group" id="location">
       <label>Location :</label>
-      <textarea style="font-size: large;" required
+      <input style="font-size: large;" required
                                   name="message"
                                   class="form-control"
                                   rows="3"
                                   placeholder="Location" id="locationInput"
         name="location" [(ngModel)]="form.location" required #location="ngModel"
         [ngClass]="{ 'is-invalid': f.submitted && location.errors }">
-      </textarea>
+      
     </div>
     <div class="form-group" id="work_type">
       <label>Work Type :</label>
-      <textarea style="font-size: large;" required
+      <input style="font-size: large;" required
       name="message"
       class="form-control"
       rows="3"
       placeholder="Work Type"
         id="worktypeInput" name="work_type" [(ngModel)]="form.work_type" required #work_type="ngModel"
         [ngClass]="{ 'is-invalid': f.submitted && work_type.errors }">
-      </textarea>
+      
     </div>
 
     <div class="form-group" id="job_description">
@@ -64,7 +64,7 @@
       <!-- <button onclick="post()" ><a routerLink="/company-posting-job-feedback">
             Post </a></button> -->
             <span class="alert alert-danger">{{errorMessage}}</span>
-      <button class="button" type="submit" (click)="post()">post</button>
+      <button class="button" type="submit">post</button>
     
     
     </div>
