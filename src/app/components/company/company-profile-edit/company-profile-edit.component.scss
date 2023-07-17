@@ -31,30 +31,36 @@ input {
 
 }
 
-.container-2 {
+
+
+#text{
     background-color: #010144;
-    height: 81px;
-    margin-top: 30px;
-}
-
-
-h2 {
-    // display: flex;
-    align-items: center;
     color: white;
     justify-items: center;
-    margin-left: 22%;
-    padding-top: 5%;
-    // margin: 50px;
-    padding-left: 2%;
-    // font-weight: bold;
-}
-.left {
-    position: relative;
-    right: 60px;
-    padding-bottom: 10px;
+    // width: 100%;
+    height: 81px;
+    text-align: center;
+    // align-items: center;
+    // border: 10px;
+    // border: 7px solid #010144;
+    margin-top: 40px;
 
 }
+
+
+
+    h2{
+        // position: relative;
+        margin-top: -30px;
+        right: 30px;
+    }
+
+    .left {
+        // position: relative;
+        padding-top: 20px;
+        margin-right: 75%;
+    
+    }
 
 #companyName{
 position: relative;

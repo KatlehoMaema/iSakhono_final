@@ -1,8 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// *{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
 
 .content{
 align-items: center;
@@ -23,13 +23,13 @@ margin-top: 52%;
 
     
 }
-img{
-    // border-radius: 30px;
-    float: left;
-    // margin-top: -280px;
-    margin-left: -10px;
-    // padding-bottom: 2px;
-}
+// img{
+//     // border-radius: 30px;
+//     float: left;
+//     // margin-top: -280px;
+//     margin-left: -10px;
+//     // padding-bottom: 2px;
+// }
 
 .bio {
     width: fit-content;
@@ -37,35 +37,39 @@ img{
     // margin-top: px;
 }
 
-.container-2{
+
+
+.container-3{
     // display: flex;
     margin-top: 20px;
     margin-left: 20px;
     // margin-left: 5%;
+    margin-left: -10px;
+    float: left;
 
 }
-
 
 #text{
     background-color: #010144;
     color: white;
     justify-items: center;
-    width: 100%;
+    // width: 100%;
     height: 81px;
     text-align: center;
-    align-items: center;
-    border: 10px;
-    border: 7px solid #010144;
-    margin-top: 30px;
-    
-    // margin-bottom: 5%;
+    // align-items: center;
+    // border: 10px;
+    // border: 7px solid #010144;
+    margin-top: 40px;
 
 }
-h2{
-    position: relative;
-    top: 20px;
-    // right: px;
-}
+
+
+
+    h2{
+        // position: relative;
+        margin-top: -30px;
+        right: 30px;
+    }
 
 
 h3 {
@@ -100,7 +104,7 @@ margin-left: 10px;
 .left {
     // position: relative;
     padding-top: 20px;
-    margin-left: 5%;
+    margin-right: 75%;
 
 }
 
