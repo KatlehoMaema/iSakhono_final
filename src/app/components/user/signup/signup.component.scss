@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 992px)  {
+// @media only screen and (min-width: 992px)  {
 .row {
     margin: 0;
     padding:0 ;
@@ -30,7 +30,7 @@ span{
 .navReg{
     font-weight: bolder;
     font-size: xx-large;
-    margin-left: 490px;
+    
     
 }
 
@@ -50,14 +50,14 @@ span{
     height: 355px;
     position: relative;
     top: 130px;
-    margin-left: 460px;
+    
     
     
     
 }
 
 #fullname{
-    margin: 15px;
+    margin: 10px;
 
 }
 
@@ -73,12 +73,11 @@ span{
     font-size: 17px;
     color: black;
     position: sticky;
-    left: 60px;
-    margin-left: 10px;
+    left: 15px;
 }
 
 #email{
-    margin-left: 15px;
+    margin: 10px;
 }
 
 #emailInput{
@@ -93,12 +92,12 @@ span{
     font-size: 17px;
     color: black;
     position: sticky;
-    margin-left: 10px;
+    
 }
 
 #password{
     
-    margin: 15px; 
+    margin: 10px; 
 }
 
 #passwordInput{
@@ -114,12 +113,11 @@ span{
     color: black;
     position: relative;
     right: 10px;
-    margin-left: 10px;
 }
 
 #c_password{
     
-    margin: 15px; 
+    margin: 10px; 
 }
 
 #c_passwordInput{
@@ -134,8 +132,7 @@ span{
     font-size: 17px;
     color: black;
     position: relative;
-    right: 10px;
-    margin-left: 10px;
+    right: 15px;
 }
 
 
@@ -198,5 +195,4 @@ span{
     font-weight: bold;
    //  font-style: italic;
     font-size: large;
-}
 }

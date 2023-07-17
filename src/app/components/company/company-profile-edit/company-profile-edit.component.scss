@@ -1,4 +1,4 @@
-@media only screen and (min-width: 992px)  {
+// @media only screen and (min-width: 992px)  {
 
 input {
     // display: inline-block;
@@ -18,7 +18,7 @@ input {
     height: 50px;
     background-color: #3A015C;
     border: #3A015C;
-    margin-left: 135px
+    // margin-left: 135px
     
 }
  
@@ -71,9 +71,9 @@ top: 10px;
     top: 20px;
 }
 
-.bg-light {
-    --bs-bg-opacity: 0;
-        background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;}
+// .bg-light {
+//     --bs-bg-opacity: 0;
+//         background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;}
 
 #location{
 
@@ -110,5 +110,4 @@ top: 10px;
 label{
     height: 50px;
     width: 300px;
-}
 }
