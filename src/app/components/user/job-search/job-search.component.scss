@@ -2,27 +2,6 @@
 
 // @media screen {
    
-
-// h2 {
-   
-//     text-align: center;
-//     color: white;
-//     font-weight: 100;
-//     margin: 40px;
-//     padding: 20px;
-//     padding-right: 40%;
-//     padding-bottom: 15px;
-//     width: 100%;
-//     font-size: x-large;
-//    //  font-stretch: wider;
-    
-// }
-// .left {
-//     position: relative;
-//     right: 90px;
-//     padding-bottom: 10px;
-
-// }
 .search {
     display: flex;
     padding-right: 15px;
@@ -30,11 +9,6 @@
     position: relative;
     bottom: 30px;
 }
-
-// .title {
-//     background-color: #010144;
-    
-// }
 
 Input {
     // align-items: center;
@@ -85,6 +59,13 @@ p{
     width: 250px;
     height: 140px;
     border-radius: 15px;
+    
+ }
+
+ .card{
+   background-color: rgb(210, 210, 238);
+   margin-top: 2%;
+   height: 180px;
  }
 
  h2{
@@ -110,7 +91,7 @@ p{
    // align-items: center;
    // border: 10px;
    // border: 7px solid #010144;
-   margin-top: 40px;
+   margin-top: 2%;
 
 }
 
