@@ -3,7 +3,7 @@
 input {
     // display: inline-block;
     padding: 1rem;
-    margin: 7px;
+    margin: 10px;
     box-sizing: border-box;
     border-radius: 30px;
     padding-left: 70px;
@@ -73,9 +73,9 @@ top: 10px;
     top: 20px;
 }
 
-.bg-light {
-    --bs-bg-opacity: 0;
-        background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;}
+// .bg-light {
+//     --bs-bg-opacity: 0;
+//         background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;}
 
 #location{
 
