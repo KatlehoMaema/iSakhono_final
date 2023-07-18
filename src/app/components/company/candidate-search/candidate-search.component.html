@@ -1,11 +1,3 @@
-<!-- <div class="title">
-
-  <h2>
-    <img onclick="window.history.go(-1)"src="../../../../assets/images/left-arrow-backup-2-svgrepo-com (3).svg" alt="" class="left" srcset="" height="50px" width="50px"> 
-    Candidates
-  </h2>
-  
-</div> -->
 
 <div id="text">
   <img onclick="window.history.go(-1)" src="../../../../assets/images/left-arrow-backup-2-svgrepo-com (3).svg" alt=""
@@ -16,46 +8,34 @@
 
 <div class="container">
   <div class="search d-flex justify-content-center">
-    <input type="text" placeholder="Search e.g for Electrician" name="search" height="15px" width="15px">
+    <input type="text" placeholder="Search for Candidate" name="search" height="15px" width="15px">
     <button class="click" type="button"><img src="../../../../assets/images/icons8-search.svg" alt="Search image cap" height="20px"
         width="20px"></button>
     <!-- <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button> -->
   </div>
-  <div class="row">
-    <div class="col-6 d-flex justify-content-center">
-      <div class="card">
-        <div class="card-body">
-          <img class="card-img-top" src="../../../../assets/images/ayabonga.jpg" alt="Card image cap"
-          height="70px" width="70px">
-          <h5 class="card-title">Ayabonga Qanda</h5>
-          <div class="card-text">Plumber</div>
-          <img class="card-img" src="../../../../assets/images/eye-svgrepo-com (1).svg" alt="viewers" height="50px"
-          width="50px">
-          <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-         <h6>5.2k viewers</h6>
-        </div>
-        <a href="#" class="btn btn-dark" id="button-1">Connect</a>
-      </div>
-    </div>
-    <div class="col-6 d-flex justify-content-center">
-      <div class="card">
-        <div class="card-body">
-          <img class="card-img-top" src="../../../../assets/images/kgotso.jpg" alt="Card image cap" height="70px"
-            width="70px">
-          <h5 class="card-title">Kgotso Maema</h5>
-          <div class="card-text">Electrician</div>
-          <img class="card-img" src="../../../../assets/images/eye-svgrepo-com (1).svg" alt="viewers" height="50px"
-          width="50px">
-          <h6>4k viewers</h6>
-          
-        </div>
-        <a href="#" class="btn btn-dark" id="button-2">Connect</a>
-        <!-- <button type="button" class="btn btn-dark">Dark</button> -->
 
-      </div>
+    
+<div class="row">
+  <div class="card text-center" *ngFor="let user of users">
+    <div class="card-body">
+      <h5 class="card-title">CANDIDATE: {{user.username}}</h5>
+      <p class="card-text">
+        {{user.email}}
+      </p>
+      <a class="btn btn-dark">Connect</a>
     </div>
-  </div>
-
+  
 </div>
+
+<!-- <div class="card text-center" *ngFor="let user of users">
+  <div class="card-body">
+    <h5 class="card-title">CANDIDATE: {{user.username}}</h5>
+    <p class="card-text">{{user.email}}</p>
+    <a class="btn btn-dark">Connect</a>
+  </div>
+</div> -->
+</div>
+  
+  
 
 <app-company-bottom-navbar></app-company-bottom-navbar>
