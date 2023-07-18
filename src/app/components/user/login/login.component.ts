@@ -46,7 +46,7 @@ export class LoginComponent  {
         console.log(data);
         
         this.storageService.saveUser(data);
-
+        this.storageService.saveToken(data.token)
         this.isLoginFailed = false;
         this.isLoggedIn = true;
         window.location.replace("user-profile") // last line
