@@ -4,9 +4,9 @@ import { Observable } from 'rxjs';
 import { application } from 'express';
 import { environment } from 'src/environments/environment';
 
-const auth_api = 'https://i-sakhono-backend.vercel.app/api/auth/'
+const base_url = 'https://i-sakhono-backend.vercel.app/api/auth/'
 const user_api = "https://i-sakhono-backend.vercel.app/api/users/"
-const base_url = "http://localhost:8080/api"
+// const base_url = "http://localhost:8080/api"
 
 @Injectable({
   providedIn: 'root'
@@ -33,7 +33,7 @@ export class AuthService {
 
   submitApplication(fullname: string, idNumber:string, contact:string, email:string, Address:string, experience:string, message:string, cv:string){
     return this.http.post (
-      auth_api + 'application-feedback',
+      base_url + 'application-feedback',
       {
         fullname, 
         idNumber, 
