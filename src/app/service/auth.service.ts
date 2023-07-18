@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { application } from 'express';
 import { environment } from 'src/environments/environment';
 
-const base_url = 'https://i-sakhono-backend.vercel.app/api/auth/'
+const base_url = 'https://i-sakhono-backend.vercel.app/api/'
 const user_api = "https://i-sakhono-backend.vercel.app/api/users/"
 // const base_url = "http://localhost:8080/api"
 
