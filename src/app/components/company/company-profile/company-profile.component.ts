@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { CompanyAuthService } from 'src/app/service/company.auth.service';
+import { CompanyService } from 'src/app/service/company.service';
 import { CompanyStorageService } from 'src/app/service/company.storage.service';
+import { JobService } from 'src/app/service/job.service';
 // import { EmployerService } from 'src/app/service/employers.service';
 
 @Component({
@@ -11,15 +14,19 @@ export class CompanyProfileComponent implements OnInit {
 
 
   currentEmployer: any
+  profile: any
+  jobs: any
  
   constructor(
     private storage: CompanyStorageService,
-     
-
+    private companyService: CompanyAuthService,
+    private jobService: JobService
     ) {}
   ngOnInit(): void {
     this.currentEmployer = this.storage.getEmployer()
     console.log(this.currentEmployer);
+    this.getProfile();
+    this.getMyJobs();
     
   }
   searchCandidates(){
@@ -28,19 +35,37 @@ export class CompanyProfileComponent implements OnInit {
     window.location.replace("search-candidate")
   }
 
-  // getCompany(data: any, id: any){
-  //   return this.http.get(company_api+id)
-  // }
-  // getCompany(data: any, id: any) {
-  //   this.EmployerService.getCompany().subscribe({
-  //     next: data => {
-  //       this.job = data
-  //       console.log(this.job)
-  //     },
-  //     error: e => {
-  //       console.error(e.message)
-  //     }
-  //   })
-  // }
+  getProfile(){
+    this.companyService.getCompany(this.currentEmployer.id).subscribe({
+      next: data => {
+        this.profile = data
+        console.log(this.profile)
+      },
+      error: e => {
+        console.error(e.error)
+      }
+    })
+  }
+
+  getMyJobs(){
+    this.jobService.getCompanyJobs(this.currentEmployer.id).subscribe({
+      next: data => {
+        this.jobs = data
+        console.log(this.jobs)
+      }
+    })
+  }
+
+  deleteJob(id: any){
+    this.jobService.deleteJob(this.currentEmployer.id, id).subscribe({
+      next: data => {
+        console.log(data)
+        window.location.reload()
+      },
+      error: e => {
+        console.error(e.error)
+      }
+    })
+  }
 
 }

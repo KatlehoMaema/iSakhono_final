@@ -46,7 +46,7 @@ export class CompanyLoginComponent {
         console.log(data);
         
         this.CompanyStorageService.saveEmployer(data);
-
+        this.CompanyStorageService.saveToken(data.token)
         this.isLoginFailed = false;
         this.isLoggedIn = true;
         window.location.replace("company-profile") // last line

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 
-const COMPANY_KEY = 'auth-company';
+const COMPANY_KEY = 'auth-user';
 const COMPANY_TOKEN = 'token'
 
 @Injectable({
@@ -18,6 +18,11 @@ export class CompanyStorageService {
   public saveEmployer(employer: any): void {
     window.sessionStorage.removeItem(COMPANY_KEY);
     window.sessionStorage.setItem(COMPANY_KEY, JSON.stringify(employer));
+  }
+
+  public saveToken(token: any): void {
+    window.sessionStorage.removeItem(COMPANY_TOKEN);
+    window.sessionStorage.setItem(COMPANY_TOKEN, token);
   }
 
   public getEmployer(): any {

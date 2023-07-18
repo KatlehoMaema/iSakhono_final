@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { BehaviorSubject } from 'rxjs';
 
-const job_api = "https://i-sakhono-backend.vercel.app/api/jobs/"
-const token = window.sessionStorage.getItem("auth-user") ? JSON.parse(`${window.sessionStorage.getItem("auth-user")}`).token : null
+const base_url = "https://i-sakhono-backend.vercel.app/api/jobs/"
+// const base_url = "http://localhost:8080/api/jobs/"
+const token = window.sessionStorage.getItem("token") ? window.sessionStorage.getItem("token") : null
 let httpOptions = {
   headers: new HttpHeaders({ 
     'x-access-token': `${token}` 
@@ -15,25 +16,33 @@ let httpOptions = {
 })
 export class JobService {
 
-   // private jobDataSource = new BehaviorSubject({jobtitle : '',location: '' , work_type: '' , job_description: ''});
-  // currentJobData = this.jobDataSource.asObservable();
-
   constructor(
     private http: HttpClient
   ) { }
 
   getAllJobs(){
-    console.log(token)
-    return this.http.get(job_api, httpOptions)
+    
+    return this.http.get(base_url, httpOptions)
   }
 
-  getOnejob(){
-    console.log(token)
-    return this.http.get(job_api, httpOptions)
+  getOnejob(id: any){
+    return this.http.get(base_url + id, httpOptions)
 
+  }
+
+  getCompanyJobs(companyid: any) {
+    return this.http.get(base_url + "company/" + companyid, httpOptions )
   }
 
   createJob(data: any){
-    return this.http.post(job_api, data, httpOptions)
+    return this.http.post(base_url, data, httpOptions)
+  }
+
+  updateJob(data: any, companyid: any, id: any){
+    return this.http.put(base_url + `${companyid}/${id}`, data, httpOptions)
+  }
+
+  deleteJob(companyid: any, id: any){
+    return this.http.delete(base_url + `${companyid}/${id}`, httpOptions)
   }
 }
