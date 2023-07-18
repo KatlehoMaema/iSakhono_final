@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { JobService } from 'src/app/service/job.service';
 
 
+
 @Component({
   selector: 'app-job-search',
   templateUrl: './job-search.component.html',

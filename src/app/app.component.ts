@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Jobs';
+
+  // displayVal:string="";
+  // getValue(val:string)
+  // {
+  //   console.warn(val)
+  //   this.displayVal=val};
 }
 
