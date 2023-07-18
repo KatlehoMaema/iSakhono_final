@@ -1,33 +1,14 @@
-// *{
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: border-box;
-// }
+
 
 .content{
 align-items: center;
 justify-content: center;
 text-align: center;
-margin-top: 52%;
+margin-top: 7%;
 }
 
 
-// .content{
-// align-items: center;
-// justify-content: center;
-// text-align: center;
-// margin-top: 52%;
-// }
 
-    
-
-// img{
-//     // border-radius: 30px;
-//     float: left;
-//     // margin-top: -280px;
-//     margin-left: -10px;
-//     // padding-bottom: 2px;
-// }
 
 .bio {
     width: fit-content;
@@ -36,14 +17,9 @@ margin-top: 52%;
 }
 
 
-
-.container-3{
-    // display: flex;
-    margin-top: 20px;
-    margin-left: 20px;
-    // margin-left: 5%;
-    margin-left: -10px;
-    float: left;
+.container-3 {
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -57,7 +33,7 @@ margin-top: 52%;
     // align-items: center;
     // border: 10px;
     // border: 7px solid #010144;
-    margin-top: 40px;
+    // margin-top: 40px;
 
 }
 
@@ -75,41 +51,7 @@ margin-top: 52%;
 }
 
 
-// h3 {
-//     font-size: larger;
-//     font-weight: bolder;
-//     margin-top: 15px;
-//     margin-left: -150px;
-//     // margin-left: -200px;
-// }
 
-// button {
-//     background-color: #3A015C;
-//     border: none;
-//     padding: 5px 60px;
-//     font-size: 25px;
-//     border-color: none;
-//     border-radius: 10px;
-//     color:white;
-//     margin-top: 20px;
-//     padding-top: 10px;
-//     padding-bottom: 10px;
-//   }
-  
-
-// .save-btn {
-//     text-align: center;
-//     padding-right: 35px;
-//     padding-top: 20px;}
-
-// .Services {
-// margin-left: 10px;
-// }
-
-// .left {
-//     // position: relative;
-//     padding-top: 20px;
-//     margin-left: 5%;
 
 .left {
     // position: relative;
@@ -143,3 +85,15 @@ margin-top: 52%;
 //     margin-right: 500px;
 // }
 // }
+.list-item {
+    margin-bottom: 2%;
+}
+
+.btn {
+    background-color: navy;
+    color: white;
+}
+.list-item h6 {
+    padding: 0;
+    margin: 0;
+}

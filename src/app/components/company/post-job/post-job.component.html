@@ -4,7 +4,7 @@
     <img onclick="window.history.go(-1)" src="../../../../assets/images/left-arrow-backup-2-svgrepo-com (3).svg" alt=""
       class="left" srcset="" height="50px" width="50px">
 
-    <h2>Create job</h2>
+    <h2>Create Job</h2>
   </div>
 <!-- </div> -->
 <!-- <div class="container-2">
@@ -15,36 +15,36 @@
   <form name="form" (ngSubmit)="f.form.valid && post()" #f="ngForm" novalidate>
     <div class="form-group" id="jobtitle">
       <label>Job Title :</label>
-      <textarea style="font-size: large;" required
+      <input style="font-size: large;" required
       name="message"
       class="form-control"
       rows="3"
       placeholder="Job Title" id="jobtitle"
         name="jobtitle" [(ngModel)]="form.jobtitle" required #jobtitle="ngModel"
         [ngClass]="{ 'is-invalid': f.submitted && jobtitle.errors }">
-      </textarea>
+      
     </div>
     <div class="form-group" id="location">
       <label>Location :</label>
-      <textarea style="font-size: large;" required
+      <input style="font-size: large;" required
                                   name="message"
                                   class="form-control"
                                   rows="3"
                                   placeholder="Location" id="locationInput"
         name="location" [(ngModel)]="form.location" required #location="ngModel"
         [ngClass]="{ 'is-invalid': f.submitted && location.errors }">
-      </textarea>
+      
     </div>
     <div class="form-group" id="work_type">
       <label>Work Type :</label>
-      <textarea style="font-size: large;" required
+      <input style="font-size: large;" required
       name="message"
       class="form-control"
       rows="3"
       placeholder="Work Type"
         id="worktypeInput" name="work_type" [(ngModel)]="form.work_type" required #work_type="ngModel"
         [ngClass]="{ 'is-invalid': f.submitted && work_type.errors }">
-      </textarea>
+      
     </div>
 
     <div class="form-group" id="job_description">
@@ -57,14 +57,14 @@
                                 
         id="job_descriptionInput" name="job_description" [(ngModel)]="form.job_description" required
         #job_description="ngModel" [ngClass]="{ 'is-invalid': f.submitted && job_description.errors }">
-        </textarea>
+      </textarea>
     </div>
 
     <div class="save-btn">
       <!-- <button onclick="post()" ><a routerLink="/company-posting-job-feedback">
             Post </a></button> -->
-            <!-- <span class="alert alert-danger">{{errorMessage}}</span> -->
-      <button class="button" type="submit" (click)="post()">Post</button>
+            <span class="alert alert-danger">{{errorMessage}}</span>
+      <button class="button" type="submit">post</button>
     
     
     </div>

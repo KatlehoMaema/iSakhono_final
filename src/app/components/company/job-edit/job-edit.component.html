@@ -1,0 +1,12 @@
+<div class="container" *ngIf="job">
+    <div class="content" >
+        <h4>JOB: {{job.jobtitle}}</h4>
+    </div>
+    <div class="edit">
+        <input type="text" placeholder="Job title" [(ngModel)]="job.jobtitle">
+        <input type="text" placeholder="Location" [(ngModel)]="job.location">
+        <input type="text" placeholder="Job description" [(ngModel)]="job.job_description">
+        <input type="text" placeholder="Work type" [(ngModel)]="job.work_type">
+        <button type="submit" (click)="updatePost()">Submit</button>
+    </div>
+</div>

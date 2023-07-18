@@ -1,3 +1,4 @@
+import { JobEditComponent } from './components/company/job-edit/job-edit.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -69,6 +70,9 @@ const routes: Routes = [
   },
   {
     path: "job-post", component: PostJobComponent
+  },
+  {
+    path: "job-edit/:id", component: JobEditComponent
   },
   {
     path: "application-form", component: ApplicationFormComponent
