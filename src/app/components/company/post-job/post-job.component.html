@@ -1,12 +1,12 @@
-<div class="container">
+
 
   <div id="text">
     <img onclick="window.history.go(-1)" src="../../../../assets/images/left-arrow-backup-2-svgrepo-com (3).svg" alt=""
       class="left" srcset="" height="50px" width="50px">
 
-    <h2>Create job</h2>
+    <h2>Create Job</h2>
   </div>
-</div>
+<!-- </div> -->
 <!-- <div class="container-2">
       <img src="../../../../assets/images/company-logo.jpg" 
       height="90px"> -->
@@ -21,7 +21,7 @@
       rows="3"
       placeholder="Job Title" id="jobtitle"
         name="jobtitle" [(ngModel)]="form.jobtitle" required #jobtitle="ngModel"
-        [ngClass]="{ 'is-invalid': f.submitted && jobtitle.errors }"/>
+        [ngClass]="{ 'is-invalid': f.submitted && jobtitle.errors }">
       
     </div>
     <div class="form-group" id="location">
@@ -57,7 +57,7 @@
                                 
         id="job_descriptionInput" name="job_description" [(ngModel)]="form.job_description" required
         #job_description="ngModel" [ngClass]="{ 'is-invalid': f.submitted && job_description.errors }">
-        </textarea>
+      </textarea>
     </div>
 
     <div class="save-btn">
