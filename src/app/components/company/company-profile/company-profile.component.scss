@@ -43,6 +43,7 @@ margin-top: 7%;
         // position: relative;
         margin-top: -30px;
         right: 30px;
+        
     }
 
 .ser {
@@ -67,33 +68,82 @@ margin-top: 7%;
 
 // }
 
-// #companyProfile{
-//     // border-radius: 30px;
-//     // float: left;
-//     margin-top: 3%;
-//     // margin-left: 25%;
-//     padding-bottom: 2px;
-//     text-align: center !important;
-//     // margin-left: 20px;
-// }
-
-// #logout[_ngcontent-ng-c3483005785] {
-//     bottom: 8px;
-//     position: relative;
-//     right: 1000px;
-//     color: white;
-//     margin-right: 500px;
-// }
-// }
-.list-item {
-    margin-bottom: 2%;
+#companyProfile{
+    // border-radius: 30px;
+    // float: left;
+    margin-bottom: 5%;
+    // margin-left: 25%;
+    padding-bottom: 2px;
+    text-align: center !important;
+    // margin-left: 20px;
 }
+
+
+// .list-item {
+//     margin-bottom: 2%;
+//     font-weight: bolder;
+
+// }
 
 .btn {
-    background-color: navy;
+    background-color: indigo;
     color: white;
+    position: relative;
+    bottom: 30px;
 }
-.list-item h6 {
-    padding: 0;
-    margin: 0;
+// .list-item h6 {
+//     padding: 0;
+//     margin: 0;
+// }
+
+
+p{
+    font-weight: bolder;
+    font-size: larger;
+    position: relative;
+    bottom: 40px;
+}
+
+h3{
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+h6{
+    font-size: larger;
+    font-weight: 600;
+    // text-decoration: underline;
+    position: relative;
+    left: 40px;
+}
+
+small{
+    font-size: large;
+    position: relative;
+    // right: 60px;
+}
+
+#deleteJob{
+    position: relative;
+    bottom: 20px;
+    left: 300px;
+    // margin-left: 50%;
+    background-color: indigo;
+    color: white;
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: large;
+
+}
+
+.card{
+    background-color: lightgray;
+    margin: 9px;
+
+}
+ 
+.card small{
+    overflow-y: hidden;
 }

@@ -56,97 +56,59 @@ Input {
     top: 8px;
 }
 
-// Input {
-//     // align-items: center;
-//     // padding-right: 30px;
-//     // margin: 10px;
-//     padding: 25px;
-//     padding-right: 190px;
-//     border-radius: 25px;
-//     // height: 6px;
-//     text-align: left;
-//     background-color: lightgray;
-//     padding-bottom: 100px;
-//     width: 340px
-// }
+
 
 button {
     // padding: 15px;
     // margin: 10px;
     border-radius: 15px;
     background-color: lightgrey;
-    // padding-left: 15px;
-    // padding-bottom: 10px;
-    // margin-left: 40px;
     width: 50px;
     height: 50px;
     position: relative;
     left: 15px;
     top: 8px;
-    
-
 }
 
- h5 {
-    background-color: lightgrey;
-    // height: 150px;
+
+h5{
+   margin-top: 1%;
+}
 
 
- }
 .row {
     width: 400px !important;
+    display: flex;
+    margin-top: 5%;
 }
  .card{
     width: 190px;
     height: 225px;
     background-color: lightgray;
-    margin-top: 20px
-   //  padding: 15px;
-   //  margin: 10px;
-   //  padding-left: 20px;
-   //  margin-right: 10px;
-   //  margin-top: 10px;
-   //  text-decoration: #01010f;
-   //  align-items: center;
- }
- img.card-img-top{
-    width: 70px;
-    height: 70px;
-    border-radius: 30px;
-    margin-left: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: relative; 
  }
 
- #button-1 {
-    // margin-right: 35px;
-    position: relative;
-    left: 40px;
-    bottom: 47px;
-    size: 10px;
-    font-size: small;
-    width: 108px;
-    // margin-left: 35px;
-    // margin-bottom: 200px;
-    
+ .card-body h5 {
+   height: 20%;
+   overflow-y: hidden;
  }
-
- #button-2 {
-    // margin-right: 35px;
-    position: relative;
-    left: 40px;
-    bottom: 47px;
-    size: 10px;
-    font-size: small;
-    width: 108px;
-    // margin-left: 35px;
-    // margin-bottom: 200px;
-    
+ .card-body p {
+   height: 50px;
+   overflow-y: hidden;
  }
-
+.card-body a {
+   // height: 30%;
+   overflow: hidden;
+}
+ 
+ 
 
  .card-title{
     font-size: large;
     position: relative;
-    top: 20px;
+   //  top: 20px;
     
  }
 
@@ -158,17 +120,17 @@ button {
      bottom: -10px;
  }
 
- h6{
-    position: relative;
-    left: 50px;
-    bottom: 25px;
+ .btn{
+   margin-top: 20%;
+   // margin-bottom: 10%;
+   // align-content: center;
+   // position: absolute;
  }
+
+p{
+   margin-top: 2%;
+}
  
- .card-img{
-    position: relative;
-    top: 10px;
-    right: 40px;
- }
 
 
 

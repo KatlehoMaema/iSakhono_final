@@ -52,7 +52,7 @@ export class LoginComponent  {
         window.location.replace("user-profile") // last line
       },
       error: err => {
-        console.error(err.message)
+        console.error("Details required")
         this.errorMessage = err.error.message;
         this.isLoginFailed = true;
       }

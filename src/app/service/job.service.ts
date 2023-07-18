@@ -5,6 +5,7 @@ import { BehaviorSubject } from 'rxjs';
 const base_url = "https://i-sakhono-backend.vercel.app/api/jobs/"
 // const base_url = "http://localhost:8080/api/jobs/"
 const token = window.sessionStorage.getItem("token") ? window.sessionStorage.getItem("token") : null
+
 let httpOptions = {
   headers: new HttpHeaders({ 
     'x-access-token': `${token}` 
