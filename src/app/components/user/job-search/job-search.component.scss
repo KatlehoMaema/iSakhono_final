@@ -2,6 +2,27 @@
 
 // @media screen {
    
+
+// h2 {
+   
+//     text-align: center;
+//     color: white;
+//     font-weight: 100;
+//     margin: 40px;
+//     padding: 20px;
+//     padding-right: 40%;
+//     padding-bottom: 15px;
+//     width: 100%;
+//     font-size: x-large;
+//    //  font-stretch: wider;
+    
+// }
+// .left {
+//     position: relative;
+//     right: 90px;
+//     padding-bottom: 10px;
+
+// }
 .search {
     display: flex;
     padding-right: 15px;
@@ -9,6 +30,11 @@
     position: relative;
     bottom: 30px;
 }
+
+// .title {
+//     background-color: #010144;
+    
+// }
 
 Input {
     // align-items: center;
@@ -18,7 +44,7 @@ Input {
     padding-right: 200px;
     border-radius: 20px;
     height: 57px;
-    text-align: left;
+   //  text-align: left;
     background-color: lightgray;
     width: 330px;
     margin-top: 10%;
@@ -41,37 +67,64 @@ button {
 
  h5 {
     
-    height: 25px;
-    color: black;
-    font-size: 200;
-    font-weight: 400;
+   //  height: 0px;
+    color: #010144;
+    font-size: 25px;
+    overflow: hidden;
+    font-weight: 100;
  }
 
 
 
 p{
-   height: 180px !important;
+   // height: 180px !important;
    font-weight: bold;
    font-style: italic;
+   overflow: hidden;
+   height: 100px;
+   overflow: hidden;
 }
 
- img.card-img-midle{
-    width: 250px;
-    height: 140px;
-    border-radius: 15px;
+//  img.card-img-midle{
+//     width: 250px;
+//     height: 140px;
+//     border-radius: 15px;
     
+//  }
+
+ .grid-container{
+  display: grid;
+  display: fit-content;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 10px;
+  grid-auto-rows: minmax(200px, auto);
+   // background: rgb(210, 210, 238);
+   // width: 350px;
+   height:max-content;
+   overflow-y: scroll
+   
  }
 
  .card{
-   background-color: rgb(210, 210, 238);
-   margin-top: 2%;
-   height: 180px;
+   height: 250px;
+   background-color: lightgray;
+   overflow: scroll;
  }
+
+//  .card{
+//    background-color: rgb(210, 210, 238);
+//    margin-top: 2%;
+//    height: 180px;
+//    display: grid;
+//    grid-template-columns: repeat(2, 1fr);
+//    gap: 10px;
+//  }
 
  h2{
    // position: relative;
    margin-top: -30px;
    right: 30px;
+   overflow-y: hidden;
 }
 
 .left {
@@ -91,7 +144,7 @@ p{
    // align-items: center;
    // border: 10px;
    // border: 7px solid #010144;
-   // margin-top: 2%;
+   margin-top: 40px;
 
 }
 
@@ -99,8 +152,9 @@ p{
     height: 40px;
     width: 110px;
     background-color: indigo;
-    position: relative;
+    position: sticky;
    //  bottom: 130px ;
+   overflow: hidden;
  }
 
 

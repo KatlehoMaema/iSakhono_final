@@ -24,8 +24,8 @@
   </div>
   <!-- <div class="row"> -->
     <!-- <div class="col-6"> -->
-       
-        <div class="card text-center" *ngFor="let job of jobs">
+       <!-- <div class="card">
+          <div class="card text-center" *ngFor="let job of jobs">
           <div class="card-header">{{job.companyname}}</div>
           <div class="card-body">
             <h5 class="card-title">JOB: {{job.jobtitle}}</h5>
@@ -34,6 +34,20 @@
           </div>
           <div class="card-footer text-muted">{{job.id}}</div>
         </div>
+      </div> -->
+
+      <div class="grid-container">
+        <div class="card text-center" *ngFor="let job of jobs">
+        <div class="card-name">{{job.companyname}}</div>
+        <div class="card-body">
+          <h5 class="card-title">JOB: {{job.jobtitle}}</h5>
+          <p class="card-text">{{job.job_description}}</p>
+          <a routerLink="/application-form"class="btn btn-dark">Apply Now</a>
+        </div>
+        <div class="card-end text-muted">{{job.id}}</div>
+      </div>
+    </div>
+
         <!-- <div class="card-body">
           <div class="content">
             
@@ -52,5 +66,6 @@
     
 
 <!-- </div> -->
-
-<app-bottom-navbar></app-bottom-navbar>
+<div>
+  <app-bottom-navbar></app-bottom-navbar>
+</div>
